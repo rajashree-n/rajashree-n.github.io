@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+body
+{ background:url(/home/rajashree/Pictures/bck.jpg);
+margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#999999; background-color:#151515;}
+h1 {
+		margin: 0;
+		padding: 0;
+		color: black;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size:40px;
+		text-align:left;
+	}
+h2 {
+		margin: 0;
+		padding: 0;
+		color: inherit;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 900;
+		font-size:25px;
+		text-align:left;
+	}
+#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: #0F1116;
+		color: #fff;
+		padding: 1.25em 1.25em 1.25em 1.25em;
+		z-index: 100;
+	}
+
+.container {	width:90%;
+		text-align:center;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+#page {
+		position: relative;
+		background: #FFF;
+		padding: 6em 4em 6em 4em;
+		border-radius: 6px;
+	}
+em, i {
+		font-style: italic;
+	}
+
+
+	p {
+		font-size:20px;
+		line-height: 10px;
+	}
+</style>
+<body>
+<div class="container-fluid" style="background-color:#151515;color:#fff;">
+  </div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
+	<li><a href="#">ABOUT ME</a></li>
+	<li><a href="#">BLOGS</a></li>
+	<li><a href="#">GALLERY</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="page" class="container">
+						<section>
+							<header class="major">
+								<h1>MINIMALISTIC</h1>
+								<h2>What  exactly is minimalistic ? !</h2>
+							</header>
+<br>
+<p>Oh! let me tell u........................................
+.......................
+................
+............................................................................................
+</p>
+<p>...............................................................................................................................................
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+</p>
+</section>
+					</div>
+
+</body>
+</html>
