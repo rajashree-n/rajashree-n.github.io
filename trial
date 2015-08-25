@@ -1,0 +1,258 @@
+<html>
+<head>
+		
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+h2,span {	text-align: center;
+		font-size:20px;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+#page {
+		padding: 2em 1em;
+	}
+.row {
+			float: left;
+			padding: 80px 0 0 80px;
+			width: 350px;
+		}
+
+.image.featured {
+			position: static;
+			display: block;
+			margin: 0;
+		}
+		
+
+.box {
+		padding: 10px 10px;
+		background: #FFF;
+		text-align: center;
+		border-radius: 5px 0px 6px 6px;
+	}
+.container {
+		text-align:center;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+.\-4u { margin-left: 33.3333333333% }
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+h1{ font-color:#585858;
+	font-family:URW Chancery L;}
+
+@keyframes circle { to { transform: rotate(1turn); } }
+
+*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-o-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out;
+		background: #d84780;
+		border-radius: 6px;
+		border: 0;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0.75em 1.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #FFF !important;
+	}
+
+		
+		input[type="button"]:hover,
+		.button:hover {
+			background: #e1719d;
+		}
+
+		
+		input[type="button"].alt,
+		.button.alt {
+			border: 1px solid #FFF;
+			color: #0f1116;
+		}
+
+		
+		input[type="button"].fit,
+		.button.fit {
+			width: 100%;
+		}
+
+		
+#redball1 {
+font-weight:bold;
+font-size:30px;
+font-family: URW Chancery L;
+color: white;
+padding:10px;
+position: absolute;
+border-radius: 50%;
+background-image: radial-gradient(ellipse farthest-corner at 10% 15%, #FFA07A,#000);
+transform-origin: right bottom;
+animation: bounce 2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+margin: -130 1000 auto;
+}
+@keyframes bounce {
+from, to {
+transform: translateY(120PX);
+}
+80% {
+
+transform: translateY(80PX);
+}
+
+}
+section.special, article.special {
+		text-align: center;
+	}
+body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#999999; background-color:#151515;}
+div.img
+{ 
+  background: url("/home/rajashree/Pictures/bg.jpg");
+  border: 1px solid black;
+  width: 1350px;
+  height: 600px;
+}
+
+div.transbox
+{
+  margin: 20px;
+  background-color: #0000;
+  border: 5px solid black;
+  opacity:0.4;
+  filter:alpha(opacity=60); 
+}
+
+div.transbox p
+{ text-align: center;
+  margin: 30%;
+  font-weight: bold;
+  color: #000000;
+}
+ 
+ul.icons {
+		cursor: default;
+		text-align: center;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0em 0.20em;
+		}
+
+			ul.icons li:first-child {
+				padding-left: 0;
+			}
+
+			ul.icons li span {
+				display: none;
+			}
+
+			ul.icons li a {
+				display: inline-block;
+				color: #828282;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+			}
+
+				ul.icons li a:before {
+					display: inline-block;
+					border: 1px solid #828282;
+					width: 2em;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1em;
+					color: #828282;
+					border-radius: 100%;
+					text-align: center;
+				}
+ 
+</STYLE>
+<body>
+
+<div class="img">
+<div class="transbox">
+  
+ </div>
+</div>
+
+<div id="redball1">>>NEW<br><dd>BLOGS!</div>
+	
+<div id="copyright">
+			<div class="container">
+				<div class="copyright">
+					<span>Design: </span><span><a href="">Rajashree Naik</a></span> 
+<br>
+<ul class="icons">
+						<li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+						<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<div class="container-fluid" style="background-color:#151515;color:#fff;">
+  </div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
+	<li><a href="#">ABOUT ME</a></li>
+	<li><a href="#">BLOGS</a></li>
+	<li><a href="#">GALLERY</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="extra">
+  <div class="container">
+	<div class="row">
+		
+	<section class="4u"> <a href="#" class="image.featured">
+		<img src="/home/rajashree/Pictures/minimal+wallpapers+43.jpg"></a>
+									<div class="box">
+										<h2>This world is full of negativity lets spread HAPPINESS ! :)</h2>
+<a href="/home/rajashree/Downloads/blogpg.html" class="button">Read More</a> </div>
+</section>
+
+</body>
+</html>
