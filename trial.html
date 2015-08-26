@@ -16,122 +16,13 @@
 
 </head>
 <style>
-.view-third img {
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   -o-transition: all 0.2s ease-in;
-   -ms-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
-}
-.view-third .mask {
-   background-color: rgba(0,0,0,0.6);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: translate(460px, -100px) rotate(180deg);
-   -moz-transform: translate(460px, -100px) rotate(180deg);
-   -o-transform: translate(460px, -100px) rotate(180deg);
-   -ms-transform: translate(460px, -100px) rotate(180deg);
-   transform: translate(460px, -100px) rotate(180deg);
-   -webkit-transition: all 0.2s 0.4s ease-in-out;
-   -moz-transition: all 0.2s 0.4s ease-in-out;
-   -o-transition: all 0.2s 0.4s ease-in-out;
-   -ms-transition: all 0.2s 0.4s ease-in-out;
-   transition: all 0.2s 0.4s ease-in-out;
-}
-.view-third h2 {
-   -webkit-transform: translateY(-100px);
-   -moz-transform: translateY(-100px);
-   -o-transform: translateY(-100px);
-   -ms-transform: translateY(-100px);
-   transform: translateY(-100px);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-}
-.view-third p {
-   -webkit-transform: translateX(300px) rotate(90deg);
-   -moz-transform: translateX(300px) rotate(90deg);
-   -o-transform: translateX(300px) rotate(90deg);
-   -ms-transform: translateX(300px) rotate(90deg);
-   transform: translateX(300px) rotate(90deg);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-}
-.view-third a.info {
-   -webkit-transform: translateY(-200px);
-   -moz-transform: translateY(-200px);
-   -o-transform: translateY(-200px);
-   -ms-transform: translateY(-200px);
-   transform: translateY(-200px);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
-}
-.view-third:hover .mask {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-   -webkit-transition-delay: 0s;
-   -moz-transition-delay: 0s;
-   -o-transition-delay: 0s;
-   -ms-transition-delay: 0s;
-   transition-delay: 0s;
-   -webkit-transform: translate(0px, 0px);
-   -moz-transform: translate(0px, 0px);
-   -o-transform: translate(0px, 0px);
-   -ms-transform: translate(0px, 0px);
-   transform: translate(0px, 0px);
-}
-.view-third:hover h2 {
-   -webkit-transform: translateY(0px);
-   -moz-transform: translateY(0px);
-   -o-transform: translateY(0px);
-   -ms-transform: translateY(0px);
-   transform: translateY(0px);
-   -webkit-transition-delay: 0.5s;
-   -moz-transition-delay: 0.5s;
-   -o-transition-delay: 0.5s;
-   -ms-transition-delay: 0.5s;
-   transition-delay: 0.5s;
-}
-.view-third:hover p {
-   -webkit-transform: translateX(0px) rotate(0deg);
-   -moz-transform: translateX(0px) rotate(0deg);
-   -o-transform: translateX(0px) rotate(0deg);
-   -ms-transform: translateX(0px) rotate(0deg);
-   transform: translateX(0px) rotate(0deg);
-   -webkit-transition-delay: 0.4s;
-   -moz-transition-delay: 0.4s;
-   -o-transition-delay: 0.4s;
-   -ms-transition-delay: 0.4s;
-   transition-delay: 0.4s;
-}
-.view-third:hover a.info {
-   -webkit-transform: translateY(0px);
-   -moz-transform: translateY(0px);
-   -o-transform: translateY(0px);
-   -ms-transform: translateY(0px);
-   transform: translateY(0px);
-   -webkit-transition-delay: 0.3s;
-   -moz-transition-delay: 0.3s;
-   -o-transition-delay: 0.3s;
-   -ms-transition-delay: 0.3s;
-   transition-delay: 0.3s;
-}
+
 
 h2,span {	text-align: center;
 		font-size:20px;
 	}
 
-	h3 {
+	h3,h4 {	
 		font-size: 1em;
 	}
 #page {
@@ -233,27 +124,7 @@ input[type="submit"],
 		}
 
 		
-#redball1 {
-font-weight:bold;
-font-size:30px;
-font-family: URW Chancery L;
-color: white;
-padding:10px;
-position: absolute;
-border-radius: 50%;
-background-image: radial-gradient(ellipse farthest-corner at 10% 15%, #FFA07A,#000);
-transform-origin: right bottom;
-animation: bounce 2s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
-margin: -130 1000 auto;
-}
-@keyframes bounce {
-from, to {
-transform: translateY(120PX);
-}
-80% {
 
-transform: translateY(80PX);
-}
 
 }
 section.special, article.special {
@@ -326,12 +197,9 @@ ul.icons {
 <body>
 
 <div class="img">
-<div class="transbox">
-  
- </div>
+
 </div>
 
-<div id="redball1">>>NEW<br><dd>BLOGS!</div>
 <div class="container-fluid" style="background-color:#151515;color:#fff;">	
 <div id="copyright">
 			<div class="container">
@@ -355,17 +223,34 @@ ul.icons {
 	<li><a href="#">BLOGS</a></li>
 	<li><a href="#">GALLERY</a></li>
       </ul></nav>
+
  <div class="container">
 	<div class="row">
 		
-	<div class="view view-third">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IC10_BVHa.jpg/250px-IC10_BVHa.jpg" />
-                    <div class="mask">
-                        <h2>Minimalistic</h2>
-                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                        <a href="#" class="info">Read More</a>
-                    </div>
-                </div>
+
+<section class="4u"> <a href="#" class="image featured"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IC10_BVHa.jpg/250px-IC10_BVHa.jpg" alt=""></a>
+									<div class="box">
+										<h3>This world is full of negativity.. Lets spread Happiness! :)</h3>
+<h4><b>DATE: 20th Aug<b><h4>
+										<a href="https://rajashree-n.github.io/newbg.html" class="button">Read More</a> </div>
+								</section>
 </div>
+
+
+<div class="container">
+	<div class="row">
+<section class="4u"> <a href="#" class="image featured"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IC10_BVHa.jpg/250px-IC10_BVHa.jpg" alt=""></a>
+									<div class="box">
+<h3>Its a Matter of EGO!<br>Why not check it out</h3>
+<h4><b>DATE: 26th Aug<b><h4>
+										<a href="https://rajashree-n.github.io/newbg1.html" class="button">Read More</a> </div>
+								</section>
+</div>
+
+<br>
+<br>
+</div>
+<br>
+
 </body>
 </html>
