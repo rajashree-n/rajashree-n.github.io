@@ -1,0 +1,103 @@
+body
+{ background:url(http://il4.picdn.net/shutterstock/videos/2034583/thumb/1.jpg?i10c=img.resize%28height:160%29);
+margin:0; padding:0; font-size:16px;}
+
+h1 {
+		margin: 0;
+		padding: 0;
+		color: black;
+		font-family:;
+		font-weight: 900;
+		font-size:40px;
+		text-align:left;
+	}
+h2,h3,h4,h5,h6 {
+		margin: 0;
+		padding: 0;
+		color: inherit;
+		font-family: sans-serif;
+		text-align:left;
+	}
+#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: #0F1116;
+		color: #fff;
+		padding: 1.25em 1.25em 1.25em 1.25em;
+		z-index: 100;
+	}
+
+.container {	width:90%;
+		text-align:center;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+.right {text-align:right;}
+#page {
+		position: relative;
+		background: #FFF;
+		padding: 6em 4em 6em 4em;
+		border-radius: 6px;
+	}
+#footer{ background-color:black;
+		color:white;
+		clear:both;
+		text-align:right;
+		padding:5px;
+	}
+em, i {
+		font-style: italic;
+	}
+
+
+	p {	text-align:left;
+		font-size:20px;
+		line-height: 20px;
+	}
+
+a {
+		color: white;
+		text-decoration: none;
+	}
+ul.icons {
+		cursor: default;
+		text-align: right;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0em 1em;
+		}
+
+			ul.icons li:first-child {
+				padding-left: 0;
+			}
+
+			ul.icons li span {
+				display: none;
+			}
+
+			ul.icons li a {
+				display: inline-block;
+				color: #828282;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+			}
+
+				ul.icons li a:before {
+					display: inline-block;
+					border: 1px solid #828282;
+					width: 2em;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1em;
+					color: #828282;
+					border-radius: 70%;
+					text-align: center;
+				}
+a.medium {
+	font-size: 2em;}

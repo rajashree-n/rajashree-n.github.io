@@ -1,0 +1,196 @@
+h2,span {	text-align: center;
+		font-size:16px;
+	}
+h3{	color:white;
+		font-size: 1em;
+	}
+h2,h3,h4,h5,h6 {
+		margin: 0;
+		padding: 0;
+		color: inherit;
+		font-family: sans-serif;
+		text-align:left;
+	}
+a {
+		color: white;
+		text-decoration:none;
+	}
+#page {
+		padding: 2em 1em;
+	}
+#header {
+    color:gray;
+    text-align:right;
+    padding:5px;
+   }
+#footer{ background-color:black;
+		color:white;
+		clear:both;
+		text-align:center;
+		padding:5px;
+	}
+.row {
+			float: left;
+			padding: 80px 0 0 80px;
+			width: 350px;
+		}
+
+.image.featured {
+			position: static;
+			display: block;
+			margin: 0;
+		}
+		
+
+.box {
+		padding: 10px 10px;
+		background: #FFF;
+		text-align: center;
+		border-radius: 5px 0px 6px 6px;
+	}
+.container {
+		text-align:center;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+.\-4u { margin-left: 33.3333333333% }
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+
+h1{ font-color:#585858;
+	font-family:URW Chancery L;}
+
+@keyframes circle { to { transform: rotate(1turn); } }
+
+*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-o-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out;
+		background: #d84780;
+		border-radius: 6px;
+		border: 0;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0.75em 1.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #FFF !important;
+	}
+
+		
+		input[type="button"]:hover,
+		.button:hover {
+			background: #e1719d;
+		}
+
+		
+		input[type="button"].alt,
+		.button.alt {
+			border: 1px solid #FFF;
+			color: #0f1116;
+		}
+
+		
+		input[type="button"].fit,
+		.button.fit {
+			width: 100%;
+		}
+
+		
+
+
+}
+section.special, article.special {
+		text-align: center;
+	}
+body{margin:0; padding:0; font-size:16px; serif; background-color:#151515;}
+div.img
+{ 
+  background: url("http://zwallpaper.biz/hinhanh/anhto/131218The-sea-cave-in-the-dawn-wallpaper.jpg");
+  border: 0px solid black;
+  width: 1350px;
+  height: 600px;
+}
+
+div.transbox
+{
+  margin: 20px;
+  background-color: #0000;
+  border: 5px solid black;
+  opacity:0.4;
+  filter:alpha(opacity=60); 
+}
+
+div.transbox p
+{ text-align: center;
+  margin: 30%;
+  font-weight: bold;
+  color: #000000;
+}
+ 
+ul.icons {
+		cursor: default;
+		text-align: center;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0em 1em;
+		}
+
+			ul.icons li:first-child {
+				padding-left: 0;
+			}
+
+			ul.icons li span {
+				display: none;
+			}
+
+			ul.icons li a {
+				display: inline-block;
+				color: #828282;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+			}
+
+				ul.icons li a:before {
+					display: inline-block;
+					border: 1px solid #828282;
+					width: 2em;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1em;
+					color: #828282;
+					border-radius: 70%;
+					text-align: center;
+				}
+ 
