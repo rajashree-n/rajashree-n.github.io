@@ -1,38 +1,33 @@
 <html>
 <head>
+<html>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-</head>
 <style>
 body
 { background:url(https://0.s3.envato.com/files/52111695/Preview%20Image.jpg);
-margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#999999; background-color:#151515;}
+margin:0; padding:0; font-size:16px;}
+
 h1 {
 		margin: 0;
 		padding: 0;
 		color: black;
-		font-family: 'Raleway', sans-serif;
+		font-family:;
 		font-weight: 900;
 		font-size:40px;
 		text-align:left;
 	}
-h2 {
+h2,h3,h4,h5,h6 {
 		margin: 0;
 		padding: 0;
 		color: inherit;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 900;
-		font-size:25px;
+		font-family: sans-serif;
 		text-align:left;
 	}
 #header {
@@ -52,6 +47,7 @@ h2 {
 		margin-right: auto;
 	
 	}
+.right {text-align:right;}
 #page {
 		position: relative;
 		background: #FFF;
@@ -67,27 +63,92 @@ em, i {
 		font-size:20px;
 		line-height: 10px;
 	}
+
+a {
+		color: white;
+		text-decoration: none;
+	}
+ul.icons {
+		cursor: default;
+		text-align: right;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0em 1em;
+		}
+
+			ul.icons li:first-child {
+				padding-left: 0;
+			}
+
+			ul.icons li span {
+				display: none;
+			}
+
+			ul.icons li a {
+				display: inline-block;
+				color: #828282;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+			}
+
+				ul.icons li a:before {
+					display: inline-block;
+					border: 1px solid #828282;
+					width: 2em;
+					height: 2em;
+					line-height: 2em;
+					font-size: 1em;
+					color: #828282;
+					border-radius: 70%;
+					text-align: center;
+				}
+a.medium {
+	font-size: 2em;}
 </style>
 <body>
-<div class="container-fluid" style="background-color:#151515;color:#fff;">
-  </div>
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
-	<li><a href="#">ABOUT ME</a></li>
-	<li><a href="#">BLOGS</a></li>
-	<li><a href="#">GALLERY</a></li>
-      </ul>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<nav id="bs-navbar" class="nav navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Rajashree Naik's Blog</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
+	<li  class="active"><a href="#">BLOGS</a></li>
+	</ul>
+	
+	</div>
+	<div class="right">
+	<ul class="icons">
+						<li><a href="#" class="fa fa-facebook-official"><span></span></a></li>
+						<li><a href="#" class="fa fa-twitter-square"><span></span></a></li>
+						<li><a href="#" class="fa fa-google-plus-square"><span></span></a></li>
+	</ul>
     </div>
   </div>
 </nav>
-
-
+<div class="fb-share-button" data-href="https://rajashree-n.github.io/newbg.html" data-layout="button_count"></div>
+<a href="" class="fa fa-arrow-circle-left medium"><span></span></a>
+<div class="right">
+<a href="#" class="fa fa-arrow-circle-right medium"><span></span></a>
+</div>
 <div id="page" class="container">
 						<section>
 							<header class="major">
 								<h1>MINIMALISTIC</h1>
-								<h2>What  exactly is minimalistic ? !</h2>
+								<h3>What  exactly is minimalistic ? !</h3>
+<h4><b> DATE: 20th AUGUST 2015</b></h4>
 							</header>
 <br>
 <p>Oh! let me tell u........................................
@@ -100,8 +161,6 @@ em, i {
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 </p>
-</section>
 					</div>
-
 </body>
 </html>
