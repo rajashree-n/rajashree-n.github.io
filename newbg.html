@@ -1,119 +1,42 @@
-<html>
-<head>
+
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="material.min.css">
+  <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="blog.css" />
+ <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <style>
 
-<style>
-body
-{ background:url(https://0.s3.envato.com/files/52111695/Preview%20Image.jpg);
-margin:0; padding:0; font-size:16px;}
-
-h1 {
-		margin: 0;
-		padding: 0;
-		color: black;
-		font-family:;
-		font-weight: 900;
-		font-size:40px;
-		text-align:left;
-	}
-h2,h3,h4,h5,h6 {
-		margin: 0;
-		padding: 0;
-		color: inherit;
-		font-family: sans-serif;
-		text-align:left;
-	}
-#header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		background: #0F1116;
-		color: #fff;
-		padding: 1.25em 1.25em 1.25em 1.25em;
-		z-index: 100;
-	}
-
-.container {	width:90%;
-		text-align:center;
-		margin-left: auto;
-		margin-right: auto;
 	
-	}
-.right {text-align:right;}
-#page {
-		position: relative;
-		background: #FFF;
-		padding: 6em 4em 6em 4em;
-		border-radius: 6px;
-	}
-#footer{ background-color:black;
-		color:white;
-		clear:both;
-		text-align:right;
-		padding:5px;
-	}
-em, i {
-		font-style: italic;
-	}
-
-
-	p {	text-align:left;
-		font-size:20px;
-		line-height: 10px;
-	}
-
-a {
-		color: white;
-		text-decoration: none;
-	}
-ul.icons {
-		cursor: default;
-		text-align: right;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0em 1em;
-		}
-
-			ul.icons li:first-child {
-				padding-left: 0;
-			}
-
-			ul.icons li span {
-				display: none;
-			}
-
-			ul.icons li a {
-				display: inline-block;
-				color: #828282;
-				width: 30px;
-				height: 30px;
-				text-align: center;
-			}
-
-				ul.icons li a:before {
-					display: inline-block;
-					border: 1px solid #828282;
-					width: 2em;
-					height: 2em;
-					line-height: 2em;
-					font-size: 1em;
-					color: #828282;
-					border-radius: 70%;
-					text-align: center;
-				}
-a.medium {
-	font-size: 2em;}
-</style>
+.demo-layout-transparent {
+  background: url('http://il4.picdn.net/shutterstock/videos/2034583/thumb/1.jpg?i10c=img.resize%28height:160%29') center;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+</head>
 <body>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -123,27 +46,22 @@ a.medium {
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<nav id="bs-navbar" class="nav navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Rajashree Naik's Blog</a>
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><b>Rajashree Naik's Blog</b></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href=""><span class="glyphicon glyphicon-home"><b>HOME</b></a>
+        <a class="mdl-navigation__link" href=""><b>BLOGS</b></a>
+      </nav>
     </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <li><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
-	<li  class="active"><a href="#">BLOGS</a></li>
-	</ul>
-	
-	</div>
-	<div class="right">
-	<ul class="icons">
-						<li><a href="#" class="fa fa-facebook-official"><span></span></a></li>
-						<li><a href="#" class="fa fa-twitter-square"><span></span></a></li>
-						<li><a href="#" class="fa fa-google-plus-square"><span></span></a></li>
-	</ul>
-    </div>
-  </div>
-</nav>
+  </header>
+ 
+
 <a href="" class="fa fa-arrow-circle-left medium"><span></span></a>
 <div id="page" class="container">
 						<section>
@@ -166,13 +84,23 @@ a.medium {
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 </p>
-					</div>
+<div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+              <form>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <textarea rows=1 class="mdl-textfield__input" id="comment"></textarea>
+                  <label for="comment" class="mdl-textfield__label">Join the discussion</label>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                  <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
+                </button>
+              </form>					
+</div>
+</div>
 <div class="right">
 <a href="#" class="fa fa-arrow-circle-right medium"><span></span></a>
 </div>
-<div id="footer">
-<h5>Copyright ©r/n</h5>
-</div>
 
+<div id="footer">
+<h4>Copyright ©r/n</h4>
 </body>
 </html>
