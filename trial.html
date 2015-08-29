@@ -1,264 +1,131 @@
-<html>
-<head>
-		
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=2">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lets share a little</title>
 
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styling.css">
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-</head>
-<style>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
+    
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-h2,span {	text-align: center;
-		font-size:16px;
-	}
-
-	h3,h4 {	color:black;
-		font-size: 1em;
-	}
-a {
-		color: white;
-		text-decoration:none;
-	}
-#page {
-		padding: 2em 1em;
-	}
-.row {
-			float: left;
-			padding: 80px 0 0 80px;
-			width: 350px;
-		}
-
-.image.featured {
-			position: static;
-			display: block;
-			margin: 0;
-		}
-		
-
-.box {
-		padding: 10px 10px;
-		background: #FFF;
-		text-align: center;
-		border-radius: 5px 0px 6px 6px;
-	}
-.container {
-		text-align:center;
-		margin-left: auto;
-		margin-right: auto;
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
+    <style>
+    #view-source {
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
 	
-	}
-.\-4u { margin-left: 33.3333333333% }
-.affix {
-      top: 0;
-      width: 100%;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-
-h1{ font-color:#585858;
-	font-family:URW Chancery L;}
-
-@keyframes circle { to { transform: rotate(1turn); } }
-
-*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-o-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-o-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
-		background: #d84780;
-		border-radius: 6px;
-		border: 0;
-		color: white;
-		cursor: pointer;
-		display: inline-block;
-		padding: 0.75em 1.5em;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: inline-block;
-		font-size: 1.2em;
-		font-weight: 600;
-		color: #FFF !important;
-	}
-
-		
-		input[type="button"]:hover,
-		.button:hover {
-			background: #e1719d;
-		}
-
-		
-		input[type="button"].alt,
-		.button.alt {
-			border: 1px solid #FFF;
-			color: #0f1116;
-		}
-
-		
-		input[type="button"].fit,
-		.button.fit {
-			width: 100%;
-		}
-
-		
-
-
-}
-section.special, article.special {
-		text-align: center;
-	}
-body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#999999; background-color:#151515;}
-div.img
-{ 
-  background: url("http://zwallpaper.biz/hinhanh/anhto/131218The-sea-cave-in-the-dawn-wallpaper.jpg");
-  border: 1px solid black;
-  width: 1350px;
-  height: 600px;
-}
-
-div.transbox
-{
-  margin: 20px;
-  background-color: #0000;
-  border: 5px solid black;
-  opacity:0.4;
-  filter:alpha(opacity=60); 
-}
-
-div.transbox p
-{ text-align: center;
-  margin: 30%;
-  font-weight: bold;
-  color: #000000;
-}
- 
-ul.icons {
-		cursor: default;
-		text-align: center;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0em 1em;
-		}
-
-			ul.icons li:first-child {
-				padding-left: 0;
-			}
-
-			ul.icons li span {
-				display: none;
-			}
-
-			ul.icons li a {
-				display: inline-block;
-				color: #828282;
-				width: 30px;
-				height: 30px;
-				text-align: center;
-			}
-
-				ul.icons li a:before {
-					display: inline-block;
-					border: 1px solid #828282;
-					width: 2em;
-					height: 2em;
-					line-height: 2em;
-					font-size: 1em;
-					color: #828282;
-					border-radius: 70%;
-					text-align: center;
-				}
- 
-</STYLE>
-<body>
-
-<div class="img">
-
+        <hed>
+<div class="content">
+  <div class="visible">
+    <p1> RAJASHREE NAIK'S</p1>
+    <ul class="mov">
+      <li class="mov1"> world !</li>
+      <li class="mov1"> Bologs !</li>
+      <li class="mov1"> Thoughts !</li>
+	</ul>
 </div>
-
-<div class="container-fluid" style="background-color:#151515;color:#fff;">	
-<div id="copyright">
-			<div class="container">
-				<div class="copyright">
-					<span>Design: Rajashree Naik</span> 
-<br>
-<ul class="icons">
-						<li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-	<div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Rajashree Naik's Blog</a>
-    </div>
-    <div>
-	 <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
-	<li><a href="#">BLOGS</a></li>
-      </ul></nav>
-
-
- <div class="container">
+</div>
+</hed>
+<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active"><span class="glyphicon glyphicon-home">HOME</a>
+          <a href="#features" class="mdl-layout__tab"><span class="glyphicon glyphicon-th-large">BLOGS</a>
+        </div>
+      </header>
+<main class="mdl-layout__content">
+<h1> Few of my thoughts and views! :) <h1>
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+<div class="container">
 	<div class="row">
 		
 
-<section class="4u"> <a href="#" class="image featured"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IC10_BVHa.jpg/250px-IC10_BVHa.jpg" alt=""></a>
+<section class="4u"> <a href="#" class="image featured"><img src="https://lh3.googleusercontent.com/66z-PX7m7wMGzMIIFfKTirxX7ZifTL1ImQokUIsohYA=w250-h107-no" alt=""></a>
 									<div class="box">
 										<h3>This world is full of negativity.. Lets spread Happiness! :)</h3>
-<h4><b>DATE: 20th Aug<b><h4>
+<h3><b>DATE: 20th Aug<b></h3>
 										<a href="https://rajashree-n.github.io/newbg.html" class="button">Read More</a> </div>
 								</section>
 </div>
 
-
-<div class="container">
 	<div class="row">
-<section class="4u"> <a href="#" class="image featured"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IC10_BVHa.jpg/250px-IC10_BVHa.jpg" alt=""></a>
+<section class="4u"> <a href="#" class="image featured"><img src="https://lh3.googleusercontent.com/XhscmKfPGsTykqa9qklgjGbYFDt8AngMDXpaAgdungU=w250-h100-no" alt=""></a>
 									<div class="box">
-<h3>Its a Matter of EGO!<br>Why not check it out</h3>
-<h4><b>DATE: 26th Aug<b><h4>
+<h3>Ignorance is<br>Bliss!</h3>
+<h3><b>DATE: 26th Aug<b></h3>
 										<a href="https://rajashree-n.github.io/newbg1.html" class="button">Read More</a> </div>
 								</section>
 </div>
 
-<br>
-<br>
+	<div class="row">
+<section class="4u"> <a href="#" class="image featured"><img src="https://lh3.googleusercontent.com/XhscmKfPGsTykqa9qklgjGbYFDt8AngMDXpaAgdungU=w250-h100-no" alt=""></a>
+									<div class="box">
+<h3>abcd<br>efg</h3>
+<h3><b>DATE: 30th Aug<b></h3>
+										<a href="https://rajashree-n.github.io/newbg1.html" class="button">Read More</a> </div>
+								</section>
 </div>
+</div>
+</div>
+</main>
+<div class="container-fluid" style="background:url(http://i.ytimg.com/vi/2XX5zDThC3U/maxresdefault.jpg);;">
+<div id="copyright">
+<div class="container">
+<div class="copyright">
+<span>Design: Rajashree Naik</span>
 <br>
+	<div class="wrapper">
+	    <ul class="social-icons icon-circle list-unstyled list-inline"> 
+<li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" class="fa fa-linkedin"></a></li>
+<li><a href="#" class="fa fa-twitter"></a></li>
+<li><a href="https://plus.google.com/u/0/103853782627966480779/posts/p/pub" class="fa fa-google-plus"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<h6>Copyright ©r/n</h6>
+</div>
 
 </body>
 </html>
