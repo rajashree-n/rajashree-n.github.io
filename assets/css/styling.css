@@ -1,8 +1,8 @@
 hed{
   width:100%;
-  height:250px;
+  height:600px;
   position:absolute;
-  background:url(https://lh3.googleusercontent.com/7FSQ-QfO5mHY1TKVE1vQxqQ1wh26YE_4ODGfKKJxuh0=w1301-h386-no) no-repeat;
+  background:url(https://lh3.googleusercontent.com/-VPrm-uS3Z4qUQCKRKMhv3EjxWcViK426b3xPfLZNUE=w1301-h521-no) no-repeat fixed;
 }
 
 .content {
@@ -13,19 +13,19 @@ hed{
   color:#ecf0f1;
   height:55px;
   position:absolute;
-  top:40%;
-  left:45%;
+  top:20%;
+  left:40%;
   margin-top:-15px;
   margin-left:-118px;
   
-  .before {
-    content:'[';
+  ::before {
+    content:':)';
     position:absolute;
     left:-30px;
     line-height:55px;
   }
-  .after {
-    content:']';
+  ::after {
+    content:'!';
     position:absolute;
     right:-30px;
     line-height:55px;
@@ -42,7 +42,7 @@ hed{
 
 .visible {
   float:left;
-	width:1024px;
+  width:1024px;
   font-weight:800px;
   overflow:hidden;
   height:40px;   
@@ -54,7 +54,7 @@ p {
   margin:0;
 }
 p1 {
-   font-size:55px;
+   font-size:52px;
   display:inline;
   float:left;
   margin:0;color:#16a085;
@@ -76,6 +76,8 @@ ul li.mov1 {
   font-size:55px;
   line-height:40px;
   margin:0;
+  margin:0;
+  color:orange;
 }
 @-webkit-keyframes opacity {
   0%   {opacity:0;}
@@ -109,4 +111,21 @@ ul li.mov1 {
   75%  {margin-top:-40px;}
   85%  {margin-top:-40px;}
   100% {margin-top:0;}
+}
+
+p3 { 
+     color: white;
+     text-size:16px;
+    -webkit-animation-name: text;
+    -webkit-animation-duration: 4s; 
+    animation-name: text;
+    animation-duration: 4s;
+}
+@keyframes text {
+    from {color: white;}
+    to {color: blue;}
+}
+@-webkit-keyframes text {
+    from {background-color: white;}
+    to {background-color: blue;}
 }
