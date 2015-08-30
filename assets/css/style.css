@@ -1,4 +1,4 @@
-h1{	 font-size:22px;
+h1{	 font-size:21px;
 	text-align: center;
 	color:#FFDEAD;
 	}
@@ -6,7 +6,7 @@ h2{	text-align: center;
 		font-size:25px;
 	}
 h3{	color:black;
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 h4,h5,h6 {
 		margin: 0;
@@ -22,6 +22,10 @@ a {
 		color: white;
 		text-decoration:none;
 	}
+span{	 font-size:18px;
+	text-align: center;
+	color:gray;
+	}
 #page {
 		padding: 2em 1em;
 	}
@@ -36,6 +40,7 @@ a {
 		text-size:12px;
 		text-align:center;
 		padding:5px;
+		width:100%;
 	}
 .row {			
 			float: left;
@@ -62,15 +67,14 @@ a {
 	
 	
 	}
+.container-fluid {
+		text-align:center;
+		width:100%;
+	
+	
+	}
 .\-4u { margin-left: 33.3333333333% }
-.affix {
-      top: 0;
-      width: 100%;
-  }
 
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
 
 @keyframes circle { to { transform: rotate(1turn); } }
 
@@ -105,9 +109,9 @@ input[type="submit"],
 		text-decoration: none;
 		text-transform: uppercase;
 		display: inline-block;
-		font-size: 1.2em;
-		font-weight: 600;
-		color: #FFF !important;
+		font-size: 1em;
+		font-weight: 500;
+		color: #FFF;
 	}
 
 		
@@ -136,7 +140,7 @@ input[type="submit"],
 section.special, article.special {
 		text-align: center;
 	}
-body{margin:0; padding:0; font-size:16px; background-color:#151515; }
+body{margin:0; padding:0;  }
 
 
 ul.icons {
@@ -191,13 +195,11 @@ hr{
 	padding-left: 5px;
 	margin-bottom: 10px;
 }
-/*---- Genral classes end -------*/
 
-/*Change icons size here*/
 .social-icons .fa {
 	font-size: 1.8em;
 }
-/*Change icons circle size and color here*/
+
 .social-icons .fa {
 	width: 50px;
 	height: 50px;
