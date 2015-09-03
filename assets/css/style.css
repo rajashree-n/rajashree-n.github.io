@@ -1,256 +1,358 @@
-h1{	 font-size:21px;
-	text-align: center;
-	color:#FFDEAD;
-	}
-h2{	text-align: center;
-		font-size:25px;
-	}
-h3{	color:black;
-		font-size: 0.8em;
-	}
-h4,h5,h6 {
-		margin: 0;
-		padding: 0;
-		color: inherit;
-		font-family: sans-serif;
-		text-align:left;
-	}
-P{	 font-size:16px;
-		color:#FFDEAD;
-	}
-a {
-		color: white;
-		text-decoration:none;
-	}
-span{	 font-size:18px;
-	text-align: center;
-	color:gray;
-	}
-#page {
-		padding: 2em 1em;
-	}
-#header {
-    color:gray;
-    text-align:right;
-    padding:5px;
-   }
-#footer{ background-color:black;
-		color:white;
-		clear:both;
-		text-size:12px;
-		text-align:center;
-		padding:5px;
-		width:100%;
-	}
-.row {			
-			float: left;
-			padding: 50px 0 0 50px;
-			width: 350px;
-		}
-
-.image.featured {
-			position: static;
-			display: block;
-			margin: 0;
-		}
-		
-
-.box {
-		padding: 1px 1px;
-		background:#DCDCDC;
-		text-align: center;
-		border-radius: 30px 0px 0px 0px;
-	}
-.container {
-		text-align:center;
-		width:100%;
-	
-	
-	}
-.container-fluid {
-		text-align:center;
-		width:100%;
-	
-	
-	}
-.\-4u { margin-left: 33.3333333333% }
-
-
-@keyframes circle { to { transform: rotate(1turn); } }
-
-*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-o-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-o-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
-		background: #d84780;
-		border-radius: 6px;
-		border: 0;
-		color: white;
-		cursor: pointer;
-		display: inline-block;
-		padding: 0.75em 1.5em;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: inline-block;
-		font-size: 1em;
-		font-weight: 500;
-		color: #FFF;
-	}
-
-		
-		input[type="button"]:hover,
-		.button:hover {
-			background: #e1719d;
-		}
-
-		
-		input[type="button"].alt,
-		.button.alt {
-			border: 1px solid #FFF;
-			color: #0f1116;
-		}
-
-		
-		input[type="button"].fit,
-		.button.fit {
-			width: 100%;
-		}
-
-		
-
+body::before {
+background-image: url('https://lh3.googleusercontent.com/VwUPanlmV7Awum5IKBPnHlnJ1mJ-rYSC9y02b8KHYfbKDLM86J1Rd2wJ2DkkanUooL_dTAjPo2uWXlv0338X3n36HivJXf4dcOUcaD_GujRE53ov4bv50GUtaLpcnq600SymqBHRuHkJcsd4eS5q65DcWSVbAKwXNo02RU0NqO_WFPhjY6uHFl5gnuXVvkh0mxaKYbc3Fwp-97wTfEwyLzB19V8aR_fKTb4GOVpI4o_LdcTw50aZufeQl6jcSRmLWiHtAgJ4cAwhxGnsVJlJS9ZCJATBIrHQ9Bs4PpFHqP40SBz3FrdMlJwBfQvcizxZsyhTKaB3civ5XrAC2vnoVzfG_l_rdnfRBhBmMjzJKQD717uM19LMo8K0it7wN-Y0K093N88GybF75yjiNA6O7HUxfuZ_dj6G4h8rinE7XIzTKSZxMo2xlGO2ZFbJquH8yqFjIwt15yj059R0_abxFzbbuAScvgP4sXPSmAPCWEA6KEEQab5_LgCu188EiFG-WLZ30w=w281-h220-no');
+background-size: cover;
+background-attachment: fixed;
+content: '';
+will-change: transform;
+z-index: -1;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: fixed;
+}
+body .demo-blog {
+font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.demo-blog .demo-blog__posts {
+max-width: 900px;
+padding: 0;
+display: flex;
+width: 100%;
+margin: 0 auto;
+flex-shrink: 0;
+}
+.demo-blog.mdl-layout .mdl-layout__content {
+padding-top: 230px;
+position: relative;
+-webkit-overflow-scrolling: touch;
+}
+.demo-blog .mdl-card {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+min-height: 360px;
+}
+.demo-blog .mdl-card__title {
+padding: 16px;
+flex-grow: 1;
+}
+.demo-blog .mdl-card__media {
+box-sizing: border-box;
+background-size: cover;
+padding: 24px;
+display: flex;
+flex-grow: 1;
+flex-direction: row;
+align-items: flex-end;
+cursor: pointer;
+}
+.demo-blog .mdl-card__media a,
+.demo-blog .mdl-card__title a {
+color: inherit;
+}
+.demo-blog .mdl-card__supporting-text {
+width: 100%;
+padding: 16px;
+min-height: 64px;
+display: flex;
+align-items: center;
+}
+.demo-blog .mdl-card__supporting-text strong {
+font-weight: 400;
+}
+.demo-blog .mdl-card__media ~ .mdl-card__supporting-text {
+min-height: 64px;
+}
+.demo-blog .mdl-card__supporting-text:not(:last-child) {
+box-sizing: border-box;
+min-height: 76px;
+}
+.demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+border-top: 1px solid rgba(0,0,0,0.1);
+}
+.demo-blog .mdl-card__actions:first-child {
+margin-left: 0;
+}
+.demo-blog .meta {
+box-sizing: border-box;
+padding: 16px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+height: auto;
+}
+.demo-blog .meta > .meta__favorites{
+flex-direction: row;
+margin: 0 8px;
+font-size: 13px;
+font-weight: 500;
+}
+.demo-blog .meta > .meta__favorites .material-icons {
+font-size: 2em;
+cursor: pointer;
+margin-left: 12px;
+}
+.demo-blog .mdl-card .meta.meta--fill {
+justify-content: space-between;
+}
+.demo-blog .meta > *:first-child {
+margin-right: 16px;
+}
+.demo-blog .meta > * {
+display: flex;
+flex-direction: column;
+}
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
+order: 0;
+}
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else {
+order: -1;
+}
+.demo-blog .fb .mdl-card__media {
+background-image: url('');
+}
+.demo-blog .something-else .mdl-card__media {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.demo-blog .something-else > button {
+position: absolute;
+top: 0;
+right: 28px;
+transform: translate(0px, -28px);
+}
+.demo-blog .something-else .mdl-card__media {
+font-size: 13px;
+font-weight: 500;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+}
+.demo-blog .something-else .mdl-card__media img {
+width: 64px;
+height: 64px;
+margin-bottom: 10px;
+}
+.demo-blog .something-else .mdl-card__supporting-text {
+background-color: #F5F5F5;
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+}
+.demo-blog .pc .mdl-card__media {
+background-image: url('http://www.wallpaperseries.com/files/pics/Beautiful%20Road%20Dark%20Background%20Wallpaper.jpg');
+}
+.demo-blog .sg .mdl-card__media {
+background-image: url('https://lh3.googleusercontent.com/WxKjU0_ILccciZf7SskdwHdBA3vvmuG7cpWmUlyRry8j4G7M_2hN3bz_guBiu1r4y_eLChQD1e3DPBUdUQbWl6OklTxKNBA0r2rWgSbnyOi47JR2Q4KsmAp8Z-0X6_pYO1mHxRyKeli9feighNfdID2cE77s_mBVHBiGrdHSjqvlGyRUw7Gr3_QaU89m1XW7H49chZI0nj5GCIzdV8R04WunR1qRpu_IhFXVhQpXLBOOpkXDRBN2CjNjJL2Aq7f0EUqv1jZ3avTxPsNHObGvbFuUU-B3ufQNrPkR6_PBnXVFs6mFs__o3Jv3tol_QyIxt8tj9nHlrfAN6s1LGamSUTwAqra1Iqm5OkxA9NqkDdytbKn_PDgWGYEy7970tZBmRZwdvhq3ga90dBEycpKXhix_nWQaMNnJOSM_81nuU1qS1q5wApRFvyx_izs5lO6F7us_ElrHkhvb1TkcfPHim5Dv_Ih_FngUoXiyVfRfmA5rRlCtkmZ24dALQpkMDiykWmUHGg=w350-h150-no');
+}
+.demo-blog .demo-blog__posts > .demo-nav {
+margin: 12px 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+color: white;
+font-weight: 500;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button {
+color: white;
+text-decoration: none;
+}
+.demo-blog .demo-blog__posts > .demo-nav .mdl-button {
+color: rgba(0,0,0,0.54);
+background-color: white;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
+margin-right: 16px;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
+margin-left: 16px;
+}
+.demo-blog .mdl-card > a {
+color: inherit;
+text-decoration: none;
+font-weight: inherit;
+}
+.demo-blog .mdl-card h3 {
+margin: 0;
+}
+.demo-blog .mdl-card h3 a {
+text-decoration: none;
+}
+.demo-blog .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
+display: block;
+font-size: 3em;
+margin-top: 0.5em;
+}
+.demo-blog .mdl-card h3.quote:before {
+content: '“';
+}
+.demo-blog .mdl-card h3.quote:after {
+content: '”';
+}
+.demo-blog--blogpost .custom-header {
+background-color: transparent;
+}
+.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
+background-image: url('https://fitbodynow.files.wordpress.com/2014/01/why-blog.jpg?w=560&h=239');
+height: 280px;
+}
+.demo-blog--blogpost .demo-blog2__posts > .mdl-card .mdl-card__media {
+background-image: url('http://img12.deviantart.net/cdc2/i/2010/129/a/8/minimal_wallpaper_by_x_spirit.jpg');
+height: 280px;
 
 }
-section.special, article.special {
-		text-align: center;
-	}
-body{margin:0; padding:0;  }
-
-
-ul.icons {
-		cursor: default;
-		text-align: center;
-	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0em 1em;
-		}
-
-			ul.icons li:first-child {
-				padding-left: 0;
-			}
-
-			ul.icons li span {
-				display: none;
-			}
-
-			ul.icons li a {
-				display: inline-block;
-				color: #828282;
-				width: 60px;
-				height: 30px;
-				text-align: center;
-			}
-
-				ul.icons li a:before {
-					display: inline-block;
-					border: 1px solid #828282;
-					width: 2em;
-					height: 2em;
-					line-height: 2em;
-					font-size: 1em;
-					color: #828282;
-					border-radius: 70%;
-					text-align: center;
-				}
-hr{
-	margin: 30px 20px;
-	border-top:2px solid #1C1E26 ;
-	border-bottom:2px solid #38404D;
+.demo-blog--blogpost .comments {
+background-color: #EEE;
 }
-.list-unstyled {
-	padding-left: 0;
-	list-style: none;
+.demo-blog--blogpost .meta > * {
+align-items: center;
 }
-.list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
+.demo-blog--blogpost .meta + .mdl-card__supporting-text {
+border: 0;
+display: flex;
+flex-direction: column;
 }
-
-.social-icons .fa {
-	font-size: 1.8em;
+.demo-blog--blogpost .meta + .mdl-card__supporting-text p {
+max-width: 512px;
+margin: 16px auto;
+font-size: 16px;
+line-height: 28px;
 }
-
-.social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: #FFF;
-	color: rgba(255, 255, 255, 0.8);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+.demo-blog--blogpost .comments {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: stretch;
+padding: 32px;
+box-sizing: border-box;
 }
-
-.social-icons.icon-circle .fa{ 
-	border-radius: 50%;
+.demo-blog--blogpost .comments > form {
+display: flex;
+flex-diretion: row;
+margin-bottom: 16px;
 }
-.social-icons.icon-rounded .fa{
-	border-radius:5px;
+.demo-blog--blogpost .comments > form .mdl-textfield {
+flex-grow: 1;
+margin-right: 16px;
+color: rgb(97, 97, 97);
 }
-.social-icons.icon-flat .fa{
-	border-radius: 0;
+/* Workaround for Firefox.
+* User agent stylesheet kept overwriting the font in FF only.
+*/
+.demo-blog--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
+font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-
-.social-icons .fa:hover, .social-icons .fa:active {
-	color: #FFF;
-	-webkit-box-shadow: 1px 1px 3px #333;
-	-moz-box-shadow: 1px 1px 3px #333;
-	box-shadow: 1px 1px 3px #333; 
+.demo-blog--blogpost .comments > form .mdl-textfield input,
+.demo-blog--blogpost .comments > form .mdl-textfield textarea {
+resize: none;
 }
-.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
- 	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1); 
+.demo-blog--blogpost .comments > form button {
+margin-top: 20px;
+background-color: rgba(0, 0, 0, 0.24);
+color: white;
 }
-.social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
-	-webkit-transform: scale(1.1) rotate(360deg);
-	-moz-transform: scale(1.1) rotate(360deg);
-	-ms-transform: scale(1.1) rotate(360deg);
-	-o-transform: scale(1.1) rotate(360deg);
-	transform: scale(1.1) rotate(360deg);
+.demo-blog--blogpost .comments .comment {
+display: flex;
+flex-direction: column;
+align-items: stretch;
 }
- 
-.wrapper,.copyright {
-	padding: 20px;
-	text-align: center;
+.demo-blog--blogpost .comments .comment > .comment__header {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 16px;
 }
-.social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;} 
-.social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;} 
-.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;} 
-
- 
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__avatar {
+width: 48px;
+height: 48px;
+border-radius: 24px;
+margin-right: 16px;
+}
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__author {
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+}
+.demo-blog--blogpost .comments .comment > .comment__text {
+line-height: 1.5em;
+}
+.demo-blog--blogpost .comments .comment > .comment__actions {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+font-size: 0.8em;
+margin-top: 16px;
+}
+.demo-blog--blogpost .comments .comment > .comment__actions button {
+margin-right: 16px;
+color: rgba(0, 0, 0, 0.24);
+}
+.demo-blog--blogpost .comments .comment > .comment__answers {
+padding-top: 32px;
+padding-left: 48px;
+}
+.demo-blog--blogpost .demo-back {
+position: absolute;
+top: 16px;
+left: 16px;
+color: white;
+z-index: 9999;
+}
+.demo-blog .section-spacer {
+flex-grow: 1;
+}
+.demo-blog .something-else {
+overflow: visible;
+z-index: 10;
+}
+.demo-blog .amazing .mdl-card__title {
+background-color: #263238;
+}
+.demo-blog .minilogo {
+width: 44px;
+height: 44px;
+background-image: url('images/avatar.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 50%;
+border-radius: 22px;
+background-color: #F5F5F5;
+}
+/* Fixes for IE 10 */
+.mdl-grid {
+display: flex !important;
+}
+.social-btn {
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: transparent;
+margin: 0 16px;
+width: 24px;
+height: 24px;
+cursor: pointer;
+opacity: 0.46;
+border-radius: 2px;
+}
+.social-btn__twitter {
+background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+}
+.social-btn__gplus {
+background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+.social-btn__share {
+color: rgba(0, 0, 0, 0.54);
+background: transparent;
+}
+.demo-blog .mdl-mini-footer {
+margin-top: 80px;
+height: 120px;
+padding: 40px;
+align-items: center;
+background-color: white;
+box-sizing: border-box;
+}
