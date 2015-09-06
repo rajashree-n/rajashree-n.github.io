@@ -3,7 +3,11 @@ hed{
   height:100%;
   position:absolute;
 }
-
+h1 {	font-family: 'Roboto';
+	text-align:center;
+	text-color:white;
+	font-size:52px;
+	}
 .content {
   width:1350px;
   font-size:55px;
