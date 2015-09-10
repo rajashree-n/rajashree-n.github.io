@@ -1,5 +1,5 @@
 body::before {
-background-image: url('https://lh3.googleusercontent.com/VwUPanlmV7Awum5IKBPnHlnJ1mJ-rYSC9y02b8KHYfbKDLM86J1Rd2wJ2DkkanUooL_dTAjPo2uWXlv0338X3n36HivJXf4dcOUcaD_GujRE53ov4bv50GUtaLpcnq600SymqBHRuHkJcsd4eS5q65DcWSVbAKwXNo02RU0NqO_WFPhjY6uHFl5gnuXVvkh0mxaKYbc3Fwp-97wTfEwyLzB19V8aR_fKTb4GOVpI4o_LdcTw50aZufeQl6jcSRmLWiHtAgJ4cAwhxGnsVJlJS9ZCJATBIrHQ9Bs4PpFHqP40SBz3FrdMlJwBfQvcizxZsyhTKaB3civ5XrAC2vnoVzfG_l_rdnfRBhBmMjzJKQD717uM19LMo8K0it7wN-Y0K093N88GybF75yjiNA6O7HUxfuZ_dj6G4h8rinE7XIzTKSZxMo2xlGO2ZFbJquH8yqFjIwt15yj059R0_abxFzbbuAScvgP4sXPSmAPCWEA6KEEQab5_LgCu188EiFG-WLZ30w=w281-h220-no');
+background-image: url('assets/images/bg.png');
 background-size: cover;
 background-attachment: fixed;
 content: '';
@@ -205,6 +205,11 @@ background-image: url('http://img12.deviantart.net/cdc2/i/2010/129/a/8/minimal_w
 height: 280px;
 
 }
+.demo-blog--blogpost .demo-blog__posts3 > .mdl-card .mdl-card__media {
+background-image: url('assets/images/ima.jpeg');
+height: 280px;
+
+}
 .demo-blog--blogpost .comments {
 background-color: #EEE;
 }
@@ -316,7 +321,7 @@ background-color: #263238;
 .demo-blog .minilogo {
 width: 44px;
 height: 44px;
-background-image: url('images/avatar.png');
+background-image: url('images/bg.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: 50%;
