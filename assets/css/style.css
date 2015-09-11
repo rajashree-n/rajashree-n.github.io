@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Yesteryear);
 
 body::before {
-background-image: url('../images/bg.png');
+background-image: url('assets/css/assets/images/bg.png');
 background-size: cover;
 background-attachment: fixed;
 content: '';
