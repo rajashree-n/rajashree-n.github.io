@@ -406,5 +406,11 @@ p11{
   font-size: 35px;
   color: white;
 }
+@font-face {
+  font-family: "Yesteryear";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yesteryear"), local("Yesteryear-Regular"), url("http://fonts.gstatic.com/s/yesteryear/v5/Y-2_3oNnGXTRT4ySJQfhEBsxEYwM7FgeyaSgU71cLG0.woff") format("woff");
+}
 }
 
