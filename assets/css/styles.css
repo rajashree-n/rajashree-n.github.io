@@ -235,3 +235,71 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+p1{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 50px;
+  color: white;
+}
+p11{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 50px;
+  color: white;
+}
+p2{
+  text-align:center;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  color: #000;
+}
+p3{
+  text-align:center;
+  font-family: 'Black Ops One', cursive;
+  font-size: 15px;
+}
+@font-face {
+  font-family: "Yesteryear";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yesteryear"), local("Yesteryear-Regular"), url("http://fonts.gstatic.com/s/yesteryear/v5/Y-2_3oNnGXTRT4ySJQfhEBsxEYwM7FgeyaSgU71cLG0.woff") format("woff");
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v16/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One'), local('BlackOpsOne-Regular'), url(http://fonts.gstatic.com/s/blackopsone/v7/2XW-DmDsGbDLE372KrMW1fn8qdNnd5eCmWXua5W-n7c.woff) format('woff');
+}
+
+.demo-layout-transparent {
+  background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+ @media only screen and (min-width: 150px) and (max-width:600px) 
+{
+p11{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 35px;
+  color: white;
+}
+@font-face {
+  font-family: "Yesteryear";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yesteryear"), local("Yesteryear-Regular"), url("http://fonts.gstatic.com/s/yesteryear/v5/Y-2_3oNnGXTRT4ySJQfhEBsxEYwM7FgeyaSgU71cLG0.woff") format("woff");
+}
+}
+
