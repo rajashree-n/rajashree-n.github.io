@@ -4,7 +4,7 @@ html, body {
   padding: 0;
 }
 .mdl-demo .mdl-layout__header-row {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
@@ -14,10 +14,6 @@ html, body {
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
   display: none;
-}
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
-  overflow: visible;
 }
 .mdl-demo .mdl-layout__tab-bar-container {
   height: 64px;
@@ -244,7 +240,7 @@ p1{
 p11{
   text-align:center;
   font-family: 'Yesteryear', cursive;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 p2{
@@ -292,7 +288,7 @@ p3{
 p11{
   text-align:center;
   font-family: 'Yesteryear', cursive;
-  font-size: 35px;
+  font-size: 15px;
   color: white;
 }
 @font-face {
