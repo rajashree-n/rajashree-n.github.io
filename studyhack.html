@@ -153,7 +153,6 @@ The numerical can prove to be scoring because if your answer is correct you will
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
 <footer class="mdl-mini-footer">
 
 <div class="mdl-mini-footer--right-section">
@@ -162,6 +161,20 @@ The numerical can prove to be scoring because if your answer is correct you will
 </footer>
 </main>
 
-
+<script>
+Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+var link = el.querySelector('a');
+if(!link) {
+return;
+}
+var target = link.getAttribute('href');
+if(!target) {
+return;
+}
+el.addEventListener('click', function() {
+location.href = target;
+});
+});
+</script>
 </body>
 </html>
