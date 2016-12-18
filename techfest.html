@@ -12,12 +12,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rajashree Naik's Blog</title>
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+<meta name="msapplication-TileColor" content="#3372DF">
 
 <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet">
-<link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.grey-orange.min.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/stylec.css">
 <link rel="stylesheet" href="../assets/css/material.min.css">
@@ -31,17 +43,61 @@ margin-right: 40px;
 margin-bottom: 40px;
 z-index: 900;
 }
+p
+{
+text-align: justify;
+}
 </style>
 </head>
 <body>
 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><span class="mdl-layout-title"><p11>Rajashree Naik :)</p11>
+</span></span>
+    </div>
+  </header>
+    
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><p2><strong>Hey Visitor!</strong></p2></span>
+     <nav class="mdl-navigation">
+      			<b><a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> HOME</a><b>
+      			<a class="mdl-navigation__link" href="blog.html"><i class="material-icons">note</i></i> BLOG</a>
+      			<a class="mdl-navigation__link" href="me.html"><i class="material-icons">book</i> BIO</a>
+      			<a class="mdl-navigation__link" href=""><i class="material-icons">help</i> SUBSCRIBE</a>
+    		</nav>
+  </div>
+</div>
+
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content"></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content"><div class="ui inverted vertical menu">
+  <a class="active item">
+    Home
+  </a></div></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main>
+</div>
+
 <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
 <main class="mdl-layout__content">
-<div class="demo-back">
-<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="blog.html" title="go back" role="button">
-<i class="material-icons" role="presentation">arrow_back</i>
-</a>
-</div>
 <div class="demo-blog__posts mdl-grid">
 <div class="mdl-card pc mdl-cell mdl-shadow--4dp mdl-cell--12-col">
 <div class="mdl-card__media mdl-color-text--grey-50">

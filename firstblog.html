@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+ <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+ <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.pink-purple.min.css" /> 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rajashree Naik's Blog</title>
 <!-- Add to homescreen for Chrome on Android -->
@@ -17,16 +26,13 @@
 <!-- Tile icon for Win8 (144x144 + tile color) -->
 <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 <meta name="msapplication-TileColor" content="#3372DF">
-<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-<!--
-<link rel="canonical" href="http://www.example.com/">
--->
+
 <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet">
-<link rel="stylesheet" href="$$hosted_libs_prefix$$/$$version$$/material.grey-orange.min.css">
 <link rel="stylesheet" href="../assets/css/style.css">
-<link rel="stylesheet" href="../assets/css/material.min.css">
+<link rel="stylesheet" href="../assets/css/stylec.css">
+
 <style>
 #view-source {
 position: fixed;
@@ -37,25 +43,67 @@ margin-right: 40px;
 margin-bottom: 40px;
 z-index: 900;
 }
+ol{
+margin-right: 50px;
+margin-left: 50px;
+text-align: justify;
+}
+p
+{
+text-align: justify;
+}
 </style>
 </head>
 <body>
 
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><span class="mdl-layout-title"><p11>Rajashree Naik :)</p11>
+</span></span>
+    </div>
+  </header>
+    
+<div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><p2><strong>Hey Visitor!</strong></p2></span>
+     <nav class="mdl-navigation">
+      			<b><a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> HOME</a><b>
+      			<a class="mdl-navigation__link" href="blog.html"><i class="material-icons">note</i></i> BLOG</a>
+      			<a class="mdl-navigation__link" href="me.html"><i class="material-icons">book</i> BIO</a>
+      			<a class="mdl-navigation__link" href=""><i class="material-icons">help</i> SUBSCRIBE</a>
+    		</nav>
+  </div>
+</div>
+
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content"></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content"><div class="ui inverted vertical menu">
+  <a class="active item">
+    Home
+  </a></div></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main>
+</div>
+
 
 <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
 <main class="mdl-layout__content">
-<div class="demo-back">
-<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="blog.html" title="go back" role="button">
-<i class="material-icons" role="presentation">arrow_back</i>
-</a>
-</div>
 <div class="demo-blog__posts mdl-grid">
 <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
 <div class="mdl-card__media mdl-color-text--grey-50">
