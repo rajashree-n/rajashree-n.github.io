@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>EasyMe</title>
+<!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" /> 
+<!--Bootstrap--->
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- custom JS, if any, goes below this line -->
+<script src="mongo.js"></script>
+<script src="main.js"></script>
+<!-- custom CSS, if any, goes below this line -->
+<link rel="stylesheet" href="static/all.css">
+<link rel="stylesheet" href="static/calculator.css">
+</head>
+<body>
+
+<!-- body starts here -->
+
+ <br><br>
+<center>
+<span class="mdl-layout-title"><span class="mdl-layout-title"><p1>EASY ME</p1><br> <h5>Makes your work easy :) </h5> 
+</span></span>
+
+<br><br>
+<div class="container">
+
+<form Name="calc">
+<div class= "box">
+<table border=8>
+<tr>
+<td colspan=4><input type=text Name="display"></td>
+</tr>
+
+
+<tr>
+<td><input type=button class="button gray" value="0" OnClick="calc.display.value+='0'"></td>
+<td><input type=button class="button gray" value="1" OnClick="calc.display.value+='1'"></td>
+<td><input type=button class="button gray" value="2" OnClick="calc.display.value+='2'"></td>
+<td><input type=button class="button orange" value="+" OnClick="calc.display.value+='+'"></td>
+</tr>
+<tr>
+<td><input type=button class="button gray" value="3" OnClick="calc.display.value+='3'"></td>
+<td><input type=button class="button gray" value="4" OnClick="calc.display.value+='4'"></td>
+<td><input type=button class="button gray" value="5" OnClick="calc.display.value+='5'"></td>
+<td><input type=button class="button orange" value="-" OnClick="calc.display.value+='-'"></td>
+</tr>
+<tr>
+<td><input type=button class="button gray" value="6" OnClick="calc.display.value+='6'"></td>
+<td><input type=button class="button gray" value="7" OnClick="calc.display.value+='7'"></td>
+<td><input type=button class="button gray" value="8" OnClick="calc.display.value+='8'"></td>
+<td><input type=button class="button orange" value="x" OnClick="calc.display.value+='*'"></td>
+</tr>
+<tr>
+<td><input type=button class="button gray" value="9" OnClick="calc.display.value+='9'"></td>
+<td><input type=button class="button yellow" value="C" OnClick="calc.display.value=''"></td>
+<td><input type=button class="button magenta" value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input type=button class="button orange" value="/" OnClick="calc.display.value+='/'"></td>
+</tr>
+
+</table>
+</div>
+</div>
+</form>
+
+<br>
+<a href="index.html" >
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+  Back
+</button>
+</a>
+</body>
+</html>

@@ -1,0 +1,491 @@
+body {
+background: url(img/map-bg.jpg) no-repeat;
+  background-size: cover;
+}
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("img/logo.gif") no-repeat center;
+}
+
+.atvm-header {
+  position: relative;
+  background-image: url(img/header-bg.jpg);
+}
+
+.atvm-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mdl-layout__title {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 250;
+}
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+.atvm-logo-row {
+  min-height: 100px;
+}
+
+.is-compact .atvm-logo-row {
+  min-height: auto;
+}
+
+.atvm-logo {
+  background: url(img/logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  margin: auto auto 10px;
+}
+
+.is-compact .atvm-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 7px;
+}
+
+/* ICONS MENU */
+@keyframes cfFadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+
+img.top {
+margin: 2px;
+  width: 500px;
+  height: 250px;
+}
+#cf {
+  position:relative;
+  height:300px;
+  width:250px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#cf img.bottom {
+margin: 2px;
+  width: 300px;
+  height: 250px;
+}
+#cf img.top {
+margin: 2px;
+  width: 300px;
+  height: 250px;
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-duration: 15s;
+animation-delay: 35s;
+}
+
+#cf1 {
+  position:relative;
+  height:300px;
+  width:250px;
+  margin:0 auto;
+}
+
+#cf1 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#cf1 img.bottom {
+margin: 2px;
+  width: 300px;
+  height: 250px;
+}
+#cf1 img.top {
+margin: 2px;
+  width: 300px;
+  height: 250px;
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-duration: 10s;
+animation-delay: 50s;
+}
+/* LANGUAGES */
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 2px;
+  width: 50px;
+  height: 80px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+.icon-cube {
+  position: relative;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  overflow: visible;
+}
+
+.icon-cube::before,
+.icon-cube::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.icon-cube::before {
+  z-index: 2;
+  background-color: #fff;
+}
+
+.icon-cube::after {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translateY(48px) rotateX(-90deg);
+          transform: translateY(48px) rotateX(-90deg);
+}
+
+.icon-cube:hover::before {
+  opacity: 0;
+  -webkit-transform: translateY(-48px) rotateX(90deg);
+          transform: translateY(-48px) rotateX(90deg);
+}
+
+.icon-cube:hover::after {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+
+		@-webkit-keyframes color_change {
+		 from {background-color: #fff;}
+    		to {background-color: red;}
+		}
+		@-moz-keyframes color_change {
+		  from {background-color: #fff;}
+    		to {background-color: red;}
+		}
+		@-ms-keyframes color_change {
+		  from {background-color: #fff;}
+    		to {background-color: red;}  
+		}
+		@-o-keyframes color_change {
+		  from {background-color: #fff;}
+    		to {background-color: red;}
+		}
+		@keyframes color_change {
+		  from {background-color: #fff;}
+    		to {background-color: red;} 
+		}
+/* PUNJABI */
+.icon-cube.punj::before,
+.icon-cube.punj::after {
+  background-position: 0 0;
+   background-image: url("img/1.png");
+background-size: 100% 100%;
+		-webkit-animation: color_change 3s;
+		   -moz-animation: color_change 3s;  
+		   -ms-animation: color_change 3s;  
+		   -o-animation: color_change 3s;  
+		   animation: color_change 3s; 
+			animation-delay: 15s;  
+}
+
+.icon-cube.punj::after {
+  background-color: red;
+ background-image: url("img/1.png");
+background-size: 100% 100%;
+}
+
+/* SI */
+.icon-cube.si::before,
+.icon-cube.si::after {
+  background-position: 0px 0;
+   background-image: url("img/2.png");
+background-size: 100% 100%;
+		-webkit-animation: color_change 3s;
+		   -moz-animation: color_change 3s;  
+		   -ms-animation: color_change 3s;  
+		   -o-animation: color_change 3s;  
+		   animation: color_change 3s;   
+			animation-delay: 18s;
+}
+
+.icon-cube.si::after {
+  background-color: red;
+ background-image: url("img/2.png");
+background-size:100% 100%;
+}
+/* MARATHI */
+.icon-cube.mara::before,
+.icon-cube.mara::after {
+  background-position: 0px 0;
+   background-image: url("img/3.png");
+  background-color: red;
+background-size: 100% 100%;
+		-webkit-animation: color_change 3s;
+		   -moz-animation: color_change 3s;  
+		   -ms-animation: color_change 3s;  
+		   -o-animation: color_change 3s;  
+		   animation: color_change 3s;   
+			animation-delay: 21s;
+}
+
+.icon-cube.mara::after {
+  background-color: red;
+ background-image: url("img/3.png");
+background-size:100% 100%;
+}
+/* ENGLISH */
+.icon-cube.eng::before,
+.icon-cube.eng::after {
+  background-position: 0px 0;
+   background-image: url("img/5.png");
+background-size: 100% 100%;
+		-webkit-animation: color_change 3s;
+		   -moz-animation: color_change 3s;  
+		   -ms-animation: color_change 3s;  
+		   -o-animation: color_change 3s;  
+		   animation: color_change 3s;   
+			animation-delay: 24s;
+}
+
+.icon-cube.eng::after {
+  background-color: red;
+ background-image: url("img/5.png");
+background-size:100% 100%;
+}
+/* URDU */
+.icon-cube.urd::before,
+.icon-cube.urd::after {
+  background-position: 0px 0;
+   background-image: url("img/4.png");
+background-size:100% 100%;
+		-webkit-animation: color_change 3s;
+		   -moz-animation: color_change 3s;  
+		   -ms-animation: color_change 3s;  
+		   -o-animation: color_change 3s;  
+		   animation: color_change 3s;   
+			animation-delay: 27s;
+}
+
+.icon-cube.urd::after {
+  background-color: red;
+ background-image: url("img/4.png");
+background-size:100% 100%;
+}
+}
+
+/* ROUTE */
+.lane  {
+ position:relative;
+  height:500px;
+  width:1300px;
+
+}
+#lane img {
+  position:absolute;
+  left:0;
+}
+#lane img.route {
+  width: 1300px;
+  height: 500px;
+}
+
+#after  {
+display:none;
+}
+#after1  {
+display:none;
+}
+#before111  {
+display:none;
+}
+#before1  {
+display:none;
+}
+#Aprint  {
+display:none;
+}
+
+a  {
+text-decoration : none;
+}
+
+#booked
+{
+  display:none;
+}
+
+shade {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.show {
+    background-color: #20b2aa;
+    color: black;
+    padding: 2px;
+    font-size: 20px;
+}
+#form{
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  vertical-align:text-top;
+}
+
+#container{
+  text-align: center;
+  position: relative;
+  margin:10px;
+}
+fieldset, #from{
+  border:1px solid #AED0EA;
+  border-radius:8px;
+  box-shadow:0 0 10px #D7EBF9;
+}
+
+legend{
+  color: #2779AA;
+  font-size: 120%;
+  text-align: center;
+  background-color: white;
+}
+
+p{
+  overflow: hidden;
+}
+
+label{
+  width: 50%;
+  text-align: right;
+  float: left;
+  clear: both;
+  color: #2779AA;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+body {
+    background: url(images/collage.jpg) no-repeat;
+  background-size: cover;
+}
+
+@keyframes pulsate {
+    0% {
+    transform: scale(0.1);
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    transform: scale(1.2);
+    opacity: 0;
+    }
+	
+}
+
+/* .wrap is our container div and will vary in name on your site */
+
+
+
+/* Alter the top and left positions to sit on top of your map location */
+.marker {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 300px; /*positions our marker*/
+    left: 450px; /*positions our marker*/
+    display: block;
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 38px;
+    left: 38px;
+    background: red;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.pin-effect {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: rgba(255, 0, 0, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulsate 2400ms ease-out infinite;
+
+}
+
+/* Adjusts the background image and marker for smaller screens */
+@media only screen and (max-width: 414px) {
+    .map-bg {
+        background-position: -100px 0px;
+    }
+
+    .marker {
+        left: 100px;
+    }
+}
+
+.btn{
+   background-color: transparent;
+   height: 70px;
+   width: 70px;
+}
+
+.glyphicon{
+ color: black;
+ font-size: 50px;
+ margin-left: 700px;
+ margin-top: 150px;
+}
+
+

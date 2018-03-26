@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>App Suite.</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<body>
+
+<div class="container">
+<div class="form">
+	<h1><a href="#">rajashree.net</a>App</h1><h1>Suite</h1>
+	<br>
+    <div class="row">
+     <div class="col-sm-12">
+        <input type="username" class="form-control insert" id="usernameid" placeholder="Enter Username" required>
+      </div>
+     </div>
+	<br>
+   <div class="row">
+    <div class="col-sm-12">             
+        <input type="password" class="form-control insert" id="passwordid" placeholder="Enter password" required>
+      </div>
+    </div>  <br>
+
+	<div class="row">
+ 	<div class="col-sm-6" style="color:white"><input type="checkbox" name="Always" value=""> Stay signed in</div>
+	<div class="col-sm-6"><a href=""><p>Forgot your password?</p></a></div>
+	</div>
+		<br>
+    <div class="row">        
+      <div class="col-sm-8">
+        <button id="Btn" onclick="login()" class="btn btn-primary" ><dd>Sign in<dd></button>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+
+	<br>
+<div class="alert alert-success" id="loginresult">
+  <div><h5>Successfully logged-in :)</h5> <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+</div>
+
+<div class="alert alert-danger" id="loginfail">
+  <h5>Sorry log-in failed :(</h5><a href="#" class="close" data-dismiss="alert" aria-label="close"> &times;</a> 
+</div>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

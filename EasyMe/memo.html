@@ -1,0 +1,83 @@
+<html>
+<title>EasyMe</title>
+
+<!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" /> 
+<!--Bootstrap--->
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script>
+	window.$ = window.jQuery = require('./static/jquery-2.2.2.min.js');
+</script>
+<!-- custom JS, if any, goes below this line -->
+<script src="mongo.js"></script>
+<script src="main.js"></script>
+<!-- custom CSS, if any, goes below this line -->
+<link rel="stylesheet" href="static/all.css">
+</head>
+<body>
+<!-- body starts here -->
+
+ <br><br>
+<center>
+<span class="mdl-layout-title"><span class="mdl-layout-title"><p1>EASY ME</p1><br> <h5>Makes your work easy :) </h5> 
+</span></span>
+
+<br><br>
+<div class="container">
+	
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <center><h4><b>SAVED MEMOS</b></h4></center>
+    </tr>
+  </thead>
+<tr id="memoresult"></tr>
+</table>
+	
+
+
+<form>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="memo">MEMO:</label>
+    <div class="col-sm-10">
+      <input type="memo" class="form-control" id="memofield" placeholder="">
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="memosubmit">Submit</button>
+    
+</form>
+  	
+</div>
+
+   </div>    
+ <br><br>
+<a href="index.html" >
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+  Back
+</button>
+</a>
+
+
+</main>
+<div class="mdl-layout__obfuscator"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+<script src="static/jquery-2.2.2.min.js"> </script>
+<script src="static/index.js"></script>	
+
+</body>
+</html>

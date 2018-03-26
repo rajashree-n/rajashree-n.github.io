@@ -1,0 +1,156 @@
+@import url(http://fonts.googleapis.com/css?family=Yesteryear);
+body {
+  margin: 0;
+  background: #000; 
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+.views  {
+ width: 70%;
+ float: left;
+}
+
+.container  {
+ width: 100%;
+}
+
+p11{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 50px;
+  color: white;
+}
+p1{
+  text-align:center;
+  font-family: 'Yesteryear', cursive;
+  color: white;
+}
+p  {
+color: white;
+}
+#box { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 25%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+#box1 { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:30; 
+  color: white;
+  padding: 2rem;
+  width: 70%;
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+#box button { 
+  display: block;
+  width: 30%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#box button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+#footer button { 
+  width: 10%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button.feed { 
+  width: 3%;
+  padding: .4rem;
+  border: none; 
+  float: right;
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button.home { 
+  width: 3%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 2rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#footer button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+#footer button.feed:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url() #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+
+}
+
+/*Cards for photos*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;

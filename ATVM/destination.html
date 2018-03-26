@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ATVM e-Ticket Booking</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" /> 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<style>
+body {
+background: url(img/collage.jpg) no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        
+	<header class="mdl-layout__header mdl-layout__header--waterfall atvm-header">
+            <div class="mdl-layout__header-row atvm-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="atvm-logo"></div>
+                    <span class="mdl-layout__title"><b>ATVM</b></span>
+                </span>
+            </div>
+        </header>
+<div class="w3-progress-container">
+    <div class="w3-progressbar w3-green" style="width:5%">
+      <div class="w3-center w3-text-white">5%</div>
+    </div>
+  </div><br>
+<div id="load"></div>
+    <div id="contents">
+<dd><h4><b>Select Your Destination </b></h4></dd>
+ <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+<div class="marker">
+        <div class="pin"></div>
+        <div class="pin-effect"></div>
+      </div></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="myFunction3()">
+ 	<i class="material-icons">refresh</i>
+	</button></div>
+</div> 
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+ 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--2-col"></div>
+  <div class="mdl-cell mdl-cell--2-col"><button id ="before11" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="myFunction2()">
+ 	DADAR 
+	</button>
+<button id ="before111" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+ 	DADAR 
+	</button>
+  <button id ="after1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" disabled>
+ 	DADAR 
+	</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+ 	<i class="material-icons">speaker</i>
+	</button>
+	</div>
+  <div class="mdl-cell mdl-cell--2-col"><button id ="before" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="myFunction1()">
+ 	CST 
+	</button>
+ <button id ="before1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+ 	CST
+	</button>
+ <button id ="after" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  disabled>
+ 	CST
+	</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+ 	<i class="material-icons">speaker</i>
+	</button></div>
+</div>
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div> 
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+        <a href="index.html">
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+ 	<i class="material-icons">keyboard_return</i>
+	</button>
+	</a>
+	<a href="index.html">
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+ 	<i class="material-icons">home</i>
+	</button>
+	</a></div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col">
+	<a href="">
+	<button id="Bprint" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" disabled>
+ 	PROCEED<i class="material-icons">trending_flat</i>
+	</button>
+	</a>
+	<a href="route.html">
+	<button id="Aprint" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+ 	PROCEED<i class="material-icons">trending_flat</i>
+	</button>
+	</a>
+</div>
+</div> 
+
+    </div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<!-- custom JS -->
+    <script src="main.js"></script>
+<script>
+var audio = new Audio("kurla.m4a" ) ;
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+
+</script>
+</body>
+</html>

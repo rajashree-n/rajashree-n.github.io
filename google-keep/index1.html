@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+
+<title>Google Keep</title>
+
+<!-- Material Design Lite -->
+<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.amber-indigo.min.css" /> 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<!-- Material Design icon font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+<!-- custom CSS -->
+<link rel="stylesheet" href="./main.css">
+<script src="./main.js"></script>
+
+</head>
+
+<body>
+<!-- body starts here -->
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header" style="color:#fff;">
+    	<div class="mdl-layout__header-row">
+      		<!-- Title -->
+      		<span class="mdl-layout-title" style="color:#fff;">Notes</span>
+      
+      		<!-- Add spacer, to align navigation to the right -->
+      		<div class="mdl-layout-spacer"></div>
+      
+     			<!-- Navigation. We hide it in small screens. -->
+      			<nav class="mdl-navigation mdl-layout--large-screen-only">
+        		<form action="#">
+  			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+    				<label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+     		 			<i class="material-icons" style="color:#fff;">search</i>
+   	 			</label>
+   	   			<div class="mdl-textfield__expandable-holder">
+      					<input class="mdl-textfield__input" type="text" id="sample6">
+      					<label class="mdl-textfield__label" for="sample-expandable"></label>
+   	   			</div>
+  			</div>
+			</form>
+        
+	        	<!-- Right aligned menu below button -->
+			<button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="myButton1" onclick="myFunction()">			<i class="material-icons" id="icn" onclick="myFunction1()" style="color:#fff;" >dashboard</i>
+			<i class="material-icons" id="change" style="color:#fff;">list</i>
+			</button>
+			<button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="myButton" onclick="myFunction1()">			<i class="material-icons" id="change" onclick="myFunction1()" style="color:#fff;" >dashboard</i>
+			<i class="material-icons" id="icn" style="color:#fff;">list</i>
+			</button>
+
+      			</nav>
+    	</div>
+	</header>
+
+<!-- Mdl Drawer -->     
+	<div class="mdl-layout__drawer" style="color:#fff;">
+		<div id="profile">
+      			<img src="profile.jpeg" style="border-radius: 50%; height:70px; width:70px; padding:10px;"> 
+     			<br><p style="padding:10px; color:#fff"><b>Rajashree Naik </b>
+			<br>rajashreenaik14@gmail.com </p>
+      		</div>
+    		<nav class="mdl-navigation">
+      			<b><a class="mdl-navigation__link" href=""><i class="material-icons">note</i> Notes</a><b>
+      			<a class="mdl-navigation__link" href=""><i class="material-icons">alarm</i> Reminder</a>
+      			<a class="mdl-navigation__link" href=""><i class="material-icons">delete</i> Trash</a>
+      			<a class="mdl-navigation__link" href=""><i class="material-icons">help</i> Help & Feedback</a>
+    		</nav>
+  	</div>
+
+
+<!-- Main page -->     
+
+	<!-- Your content goes here -->
+	  <div class="inside" id="inside1">
+
+		<!-- Adding quick note -->
+		<div class="mdl-grid" id="front">
+  			<div class="mdl-cell mdl-cell--2-col"></div>
+  			<div class="mdl-cell mdl-cell--6-col">
+				<div id="show">
+					<div id="shade">
+	  					<div class="header2"> 
+							<form action="#">
+	 						 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="add" onclick="myFunctionAddnote()" >ADD Quick Notes</button>
+							</form>
+						</div>
+					</div>
+				</div>				
+			
+			<div id="hidden">
+				<div id="shade">
+  					<div class="header2"> 
+						<form action="#">
+ 						 <input type="text" id="form" placeholder="Add a ToDo/ List Title"><img id="pic" src="#" alt="your image" />
+						</form>
+						<input type='file' id="form1" onchange="readURL(this);" onclick="functionhide()" />
+						<center>
+						<button id="addtodo" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">ADD Quick Note</button><button id="addtodo1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">ADD List </button>
+						</center>
+					</div>
+				</div>
+				
+			</div>
+ 			</div>
+  			<div class="mdl-cell mdl-cell--3-col">
+				<div id="shade">
+  					<div class="header2">
+						<div class="mdl-grid">
+  							<div class="mdl-cell mdl-cell--3-col">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+								<i class="material-icons" onclick="change1()">note</i>
+								</button>
+							</div>
+		  					<div class="mdl-cell mdl-cell--3-col">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+								<i class="material-icons" onclick="change2()">list</i>
+								</button>
+							</div>
+		  					<div class="mdl-cell mdl-cell--3-col">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+								<i class="material-icons">mic</i>
+								</button>
+							</div>
+		  					<div class="mdl-cell mdl-cell--3-col">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+								<i class="material-icons" onclick="change3()">photo_camera</i>
+								</button>
+							</div>
+                				 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+     <!-- Grid view goes here -->
+<div id="holder">
+<ul id="todo">
+<br>
+<br><br>
+</ul>
+	
+<!-- Grid view CLOSED -->     
+</div>
+</div>
+<!-- INSIDE CLOSED -->     
+          </div>
+<!-- Main Page CLOSED -->     
+
+
+<!-- MDL HEADER CLOSED -->     
+</div>
+<!-- custom JS -->
+
+
+</body>
+</html>

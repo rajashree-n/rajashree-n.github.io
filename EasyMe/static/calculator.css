@@ -1,0 +1,61 @@
+h1
+ {
+    color: #ffd700;
+	text-align:center;
+	
+}
+
+table 
+{
+	padding: 25px;
+}
+
+
+.box
+{
+height:400px;
+width:350px;
+border-radius:10px;
+position:relative;
+top:60px;
+
+} 
+
+.button
+{
+	width:40px;
+height:30px;
+border:none;
+border-radius:8px;
+margin-left:17px;
+cursor:pointer;
+border-top:2px solid transparent;
+padding:5px;
+}
+
+td
+{ padding:10px;
+}
+.button.gray
+{
+color:black;
+background-color:grey;
+}
+
+.button.magenta
+{
+	color:black;
+	background-color:magenta;
+}
+
+.button.yellow
+{
+	color:black;
+	background-color:yellow;
+}
+
+.button.orange
+{
+	color:black;
+	background-color:orange;
+}

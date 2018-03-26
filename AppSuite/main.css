@@ -1,0 +1,49 @@
+body  {
+	background-image: url(back.jpeg);
+	background-size:cover;
+}
+#loginresult
+{
+	display:none;
+}
+
+#loginfail
+{
+	display:none;
+}
+
+.form  {
+        margin-top:13%;
+	margin-left:35%;
+	margin-right:35%;
+}
+h1
+{
+	color:#fff;
+        font-size:3em;
+}
+
+.insert {
+  border:1px solid #AED0EA;
+  border-radius:8px;
+  box-shadow:0 0 10px #D7EBF9;
+}
+#Btn  { padding-left:40px;
+        padding-right:40px;
+
+}
+@media only screen and (min-width: 150px) and (max-width:600px) 
+{
+body
+{
+ font-size: 90%;
+}
+.form  
+{
+ margin:5px;
+}
+#Btn  { padding-left:20px;
+        padding-right:20px;
+
+}
+}

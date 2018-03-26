@@ -1,0 +1,76 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<title>EasyMe</title>
+
+<!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" /> 
+<!--Bootstrap--->
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!-- custom JS, if any, goes below this line -->
+<script src="mongo.js"></script>
+<script src="main.js"></script>
+<!-- custom CSS, if any, goes below this line -->
+<link rel="stylesheet" href="static/all.css">
+<link rel="stylesheet" href="static/calendar.css">
+
+ <script src="static/prototype.js"></script>
+    <script src="static/calendarview.js"></script>
+    <script>
+      function setupCalendars() {
+        // Embedded Calendar
+        Calendar.setup(
+          {
+            dateField: 'embeddedDateField',
+            parentElement: 'embeddedCalendar'
+          }
+        )
+
+      }
+
+      Event.observe(window, 'load', function() { setupCalendars() })
+    </script>
+</head>
+<body>
+
+<!-- body starts here -->
+
+ <br><br>
+<center>
+<span class="mdl-layout-title"><span class="mdl-layout-title"><p1>EASY ME</p1><br> <h5>Makes your work easy :) </h5> 
+</span></span>
+
+<br><br>
+<div class="container">
+
+<div>
+      <div style="height: 300px; padding: 10px; -webkit-border-radius: 12px; -moz-border-radius: 12px; margin-right: 10px">
+        
+        <div id="embeddedExample" style="">
+          <div id="embeddedCalendar" style="margin-left: auto; margin-right: auto">
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+<br>
+<a href="index.html" >
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+  Back
+</button>
+</a>
+</div>
+
+</body>
+</html>​

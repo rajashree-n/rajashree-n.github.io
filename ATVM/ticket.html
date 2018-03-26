@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ATVM e-Ticket Booking</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" /> 
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        
+	<header class="mdl-layout__header mdl-layout__header--waterfall atvm-header">
+            <div class="mdl-layout__header-row atvm-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="atvm-logo"></div>
+                    <span class="mdl-layout__title"><b>ATVM</b></span>
+                </span>
+            </div>
+        </header>
+
+  <div class="w3-progress-container">
+    <div class="w3-progressbar w3-green" style="width:50%">
+      <div class="w3-center w3-text-white">50%</div>
+    </div>
+  </div><br></br>
+
+
+<dd><h4><b>Book Tickets </b></h4></dd>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+  <div class="mdl-cell mdl-cell--1-col"><a href="ticket.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+ 	<i class="material-icons">refresh</i>
+	</button></a></div>
+  <div class="mdl-cell mdl-cell--1-col"></div>
+</div> 
+
+<div id="section2" class="container-fluid">
+
+<div id="container">
+  <div id="form">
+    <form id="book_tickets">
+      <fieldset>
+        <legend>Booking Details</legend>
+
+        <p>
+              	 <label for="tickets_quantity"><i class="material-icons md-48">face</i></label>
+          <input type="number" value="0" id="number1" required />
+ 		
+
+        </p>
+
+        <p>
+          	<label for="tickets_quantity"><i class="material-icons md-48">child_care</i></label>
+          <input type="number" value="0" id="number2" required />
+        </p>
+
+	<p>
+          	<label for="tickets_quantity"><i class="material-icons md-48">card_travel</i></label>
+          <input type="number" value="0" id="number3" required />
+        </p>
+        <div>
+           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Submit" id="book" onclick="myFunctionBook()">BOOK NOW</button>
+        </div>
+      </fieldset>
+    </form>
+
+  
+  <div id="booked">
+   <div id="shade">
+  					<div class="show">
+						<div id="message"></div>
+ 					</div>
+   </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

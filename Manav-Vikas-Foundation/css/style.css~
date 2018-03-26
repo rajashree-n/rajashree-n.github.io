@@ -1,0 +1,47 @@
+
+ .slider2_container{
+position: absolute; top: 150px; left: 30px; right: 5px; width: 240px;
+        height: 500px;
+}
+div.img {
+    margin: 5px;
+    padding: 25px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+   
+}   
+
+
+div.img1 {background-color: #f08080;
+    background-repeat: no-repeat;
+    margin: 35px;
+    height: 200px;
+    width:25%;
+    float: left;
+    text-align: center;
+    position: absolute; 
+    top: 250px;
+}	
+
+div.img1 img1 {
+    display: inline;
+   
+}   
+
+div.img1 a:hover img1 {
+    border: 10px solid #0000ff;
+}
+
+div.desc1 {
+  text-align: center;
+  font-size: 0.9em;
+  width: auto;
+
+}
+

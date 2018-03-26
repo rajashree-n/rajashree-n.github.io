@@ -1,0 +1,30 @@
+{
+    "name": "EasyMe",
+    "version": "0.0.0",
+    "description": "A Digital Diary System",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron ."
+    },
+    "author": "Rajashree devika kranti",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.15.0",
+        "express": "^4.13.4",
+        "mongodb": "^2.1.7"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rajashree-n/EasyMe.git"
+    },
+    "keywords": [
+        "Contacts",
+        "calculator",
+        "Memo",
+	"Calendar"
+    ],
+    "bugs": {
+        "url": "https://github.com/rajashree-n/EasyMe/issues"
+    }
+}
