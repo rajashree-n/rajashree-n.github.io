@@ -50,6 +50,25 @@ padding-top: 230px;
 position: relative;
 -webkit-overflow-scrolling: touch;
 }
+
+#GK1{
+    display:none;
+}
+#GK2{
+    display:none;
+}
+#App{
+    display:none;
+}
+#Jack{
+    display:none;
+}
+#EM{
+    display:none;
+}
+#ATM{
+    display:none;
+}
 </style>
 </head>
 <body>
@@ -79,11 +98,92 @@ position: relative;
     <a href="https://github.com/rajashree-n"><button class="mdl-button mdl-js-button mdl-button--raised">
         <i class="fa fa-github"></i> GitHub
       </button></a>
+      <a onclick="reset()" href="https://www.rajashree.net/project.html"><button class="mdl-button mdl-js-button mdl-button--raised">
+            <i class="fa fa-github"></i> Projects
+          </button></a>
 </center>
+        <iframe id="GK1" src="google-keep/index1.html" style="width:90%; height:900px; padding:20px;"></iframe>
+        <iframe id="GK2" src="google-keep/index.html" style="width:90%; height:900px; padding:20px;"></iframe>
+        <iframe id="Jack" src="jackieC-portfolio/index.html" style="width:90%; height:900px; padding:20px;"></iframe>
+        <iframe id="App" src="AppSuite/index.html" style="width:90%; height:600px; padding:20px;"></iframe>
+        <iframe id="ATM" src="ATVM/index.html" style="width:90%; height:900px; padding:20px;"></iframe>
+        <iframe id="EM" src="EasyMe/index.html" style="width:90%; height:900px; padding:20px;"></iframe>
 
 <div class="demo-blog__posts mdl-grid">
 
-    <div class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+
+    <div id="1" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+        <div class="mdl-card__title mdl-color-text--grey-50">
+        <h5 class="quote"><a href="#">Biological Tree Growth - JAVA Application</a></h5>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+        <a href="https://github.com/rajashree-n/Biological-Tree-Growth"><button class="mdl-button mdl-js-button mdl-button--raised">
+          <i class="fa fa-github"></i> GitHub
+        </button></a>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+            <div>
+                    Download the jar file from github and run
+            </div>
+        </div>
+    </div>
+
+    <div id="2" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+        <div class="mdl-card__title mdl-color-text--grey-50">
+        <h5 class="quote"><a href="#">Todo Application - Spring MVC</a></h5>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+        <a href="https://github.com/rajashree-n/AngularJS-Todo-App"><button class="mdl-button mdl-js-button mdl-button--raised">
+          <i class="fa fa-github"></i> GitHub
+        </button></a>
+        </div><div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+            <div>
+                    It requires local-host Tomcat to run
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="3" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+        <div class="mdl-card__title mdl-color-text--grey-50">
+        <h5 class="quote"><a href="#">Todo Application - AngularJS</a></h5>
+        </div>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+        <a href="https://github.com/rajashree-n/Spring-App-TodoList"><button class="mdl-button mdl-js-button mdl-button--raised">
+          <i class="fa fa-github"></i> GitHub
+        </button></a>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+            <div>
+                    It requires server to run - Download and - ng serve
+            </div>
+        </div>
+    </div>
+
+    <div id="4" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+            <div class="mdl-card__title mdl-color-text--grey-50">
+            <h5 class="quote"><a href="google-keep/index.html">Google-Keep Todo Application</a></h5>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+            <a href="https://github.com/rajashree-n/google-keep"><button class="mdl-button mdl-js-button mdl-button--raised">
+              <i class="fa fa-github"></i> GitHub
+            </button></a>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+                <div>
+                    It is plain HTML and JAVASCRIPT
+                    <button onclick="myFunc1()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                         Sample View
+                      </button> <i></i>
+                      <button onclick="myFunc()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--raisedt">
+                             Working View
+                          </button>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="5" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
         <div class="mdl-card__title mdl-color-text--grey-50">
         <h5 class="quote"><a href="AppSuite/index.html">AppSuite WebPage</a></h5>
         </div>
@@ -94,32 +194,16 @@ position: relative;
         </div>
         <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
             <div>
-                <a href="AppSuite/index.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <button onclick="myFunc2()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <i class="fa fa-github"></i> Sample View
-                  </button></a>
+                  </button>
             </div>
         </div>
     </div>
 
-    <div class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="google-keep/index.html">Google-Keep WebPage</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/google-keep"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
-            <div>
-                <a href="google-keep/index.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    <i class="fa fa-github"></i> Sample View
-                  </button></a>
-            </div>
-        </div>
-    </div>
 
-    <div class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+
+    <div id="6" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
         <div class="mdl-card__title mdl-color-text--grey-50">
         <h5 class="quote"><a href="jackieC-portfolio/index.html">Jackie Chan Portfolio</a></h5>
         </div>
@@ -130,14 +214,16 @@ position: relative;
         </div>
         <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
             <div>
-                <a href="jackieC-portfolio/index.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <button onclick="myFunc3()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <i class="fa fa-github"></i> Sample View
-                  </button></a>
+                  </button>
             </div>
         </div>
     </div>
 
-    <div class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+
+    
+    <div id="7" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
         <div class="mdl-card__title mdl-color-text--grey-50">
         <h5 class="quote"><a href="EasyMe/index.html">Easy Me Application</a></h5>
         </div>
@@ -148,14 +234,15 @@ position: relative;
         </div>
         <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
             <div>
-                <a href="EasyMe/index.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <button onclick="myFunc4()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <i class="fa fa-github"></i> Sample View
-                  </button></a>
+                  </button>
             </div>
         </div>
     </div>
 
-    <div class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+
+    <div id="8" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
         <div class="mdl-card__title mdl-color-text--grey-50">
         <h5 class="quote"><a href="ATVM/index.html">ATVM</a></h5>
         </div>
@@ -166,12 +253,14 @@ position: relative;
         </div>
         <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
             <div>
-                <a href="ATVM/index.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <button onclick="myFunc5()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <i class="fa fa-github"></i> Sample View
-                  </button></a>
+                  </button>
             </div>
         </div>
     </div>
+
+
 
 </div>
 </main>
@@ -182,4 +271,86 @@ position: relative;
 <h6>Copyright © Rajashree Naik</h6>
 </div>
 </footer>
+
+
+<script>
+    function myFunc() {
+        document.getElementById("GK1").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+    function myFunc1() {
+        document.getElementById("GK2").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+    function myFunc2() {
+        document.getElementById("App").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+    function myFunc3() {
+        document.getElementById("Jack").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+    function myFunc4() {
+        document.getElementById("EM").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+    function myFunc5() {
+        document.getElementById("ATM").style.display="block";
+        document.getElementById("1").style.display="none";
+        document.getElementById("2").style.display="none";
+        document.getElementById("3").style.display="none";
+        document.getElementById("4").style.display="none";
+        document.getElementById("5").style.display="none";
+        document.getElementById("6").style.display="none";
+        document.getElementById("7").style.display="none";
+        document.getElementById("8").style.display="none";
+
+    }
+
+</script>
 </body>
