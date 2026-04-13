@@ -4,4 +4,4 @@
  Simple web pages created using google-material lite.
  An additional BIO page created using Impress JS.
 ```
-[Web-Link](https://www.rajashree.net)
+[Web-Link](https://rajashree-n.github.io)
