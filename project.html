@@ -1,358 +1,685 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-     <!-- Material Design Lite -->
-    <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" /> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajashree Naik | Projects</title>
+  <meta name="description" content="Selected software and web development projects by Rajashree Naik.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --surface: rgba(255, 250, 243, 0.82);
+      --surface-strong: #fffaf4;
+      --text: #1f2933;
+      --muted: #5d6a75;
+      --accent: #c76438;
+      --accent-dark: #8e3f1c;
+      --teal: #2e5d51;
+      --line: rgba(143, 92, 61, 0.18);
+      --shadow: 0 22px 60px rgba(91, 57, 31, 0.14);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max-width: 1120px;
+    }
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    * {
+      box-sizing: border-box;
+    }
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rajashree Naik's Home</title>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Manrope", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(235, 169, 113, 0.28), transparent 30%),
+        radial-gradient(circle at 88% 18%, rgba(157, 194, 182, 0.32), transparent 26%),
+        linear-gradient(180deg, #f8f1e7 0%, #f3ede4 50%, #efe7db 100%);
+      min-height: 100vh;
+    }
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Material Design Lite">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+        url("assets/images/bg.png") center/cover no-repeat;
+      opacity: 0.16;
+      pointer-events: none;
+      z-index: -2;
+    }
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-<style>
-#view-source {
-position: fixed;
-display: block;
-right: 0;
-bottom: 0;
-margin-right: 40px;
-margin-bottom: 40px;
-z-index: 900;
-}
-.mdl-card {
-  width: 200px;
-  height: 80px;
- 
-}
-.demo-blog.mdl-layout .mdl-layout__content {
-padding-top: 230px;
-position: relative;
--webkit-overflow-scrolling: touch;
-}
+    .shell {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+    }
 
-#GK1{
-    display:none;
-}
-#GK2{
-    display:none;
-}
-#App{
-    display:none;
-}
-#Jack{
-    display:none;
-}
-#EM{
-    display:none;
-}
-#ATM{
-    display:none;
-}
-iframe {
-    background-color: azure;
-}
-</style>
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(248, 241, 231, 0.8);
+      border-bottom: 1px solid rgba(110, 75, 43, 0.1);
+    }
+
+    .topbar-inner {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-family: "Fraunces", serif;
+      font-size: 1.55rem;
+      letter-spacing: 0.02em;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a {
+      padding: 10px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus-visible,
+    .nav a.active {
+      color: var(--text);
+      background: rgba(199, 100, 56, 0.08);
+      outline: none;
+    }
+
+    .hero {
+      padding: 52px 0 28px;
+    }
+
+    .hero-card {
+      background: rgba(255, 250, 243, 0.74);
+      border: 1px solid rgba(116, 82, 50, 0.16);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      padding: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -60px;
+      top: -60px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(199, 100, 56, 0.16), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(46, 93, 81, 0.1);
+      color: var(--teal);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 14px;
+      max-width: 10ch;
+      font-family: "Fraunces", serif;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-copy {
+      max-width: 66ch;
+    }
+
+    .hero-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+      line-height: 1.82;
+    }
+
+    .cta-row,
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(108, 59, 29, 0.14);
+      outline: none;
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, #c76438, #ad4a22);
+      color: #fff;
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.72);
+      border-color: rgba(118, 82, 48, 0.15);
+      color: var(--text);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(118, 82, 48, 0.14);
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    section {
+      padding: 14px 0 28px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-family: "Fraunces", serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      letter-spacing: -0.03em;
+    }
+
+    .section-heading p {
+      margin: 0;
+      max-width: 52ch;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .project-top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .project-top h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .project-top p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .type-badge {
+      flex-shrink: 0;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(199, 100, 56, 0.1);
+      color: var(--accent-dark);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack span {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(118, 82, 48, 0.14);
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(118, 82, 48, 0.14);
+      background: rgba(255, 255, 255, 0.7);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .project-link.primary {
+      background: linear-gradient(135deg, #c76438, #ad4a22);
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .project-link:hover,
+    .project-link:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(108, 59, 29, 0.12);
+      outline: none;
+    }
+
+    .note {
+      padding: 22px 24px;
+      background: rgba(46, 93, 81, 0.08);
+      border: 1px solid rgba(46, 93, 81, 0.12);
+      border-radius: var(--radius-lg);
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .footer {
+      padding: 28px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    @media (max-width: 920px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .topbar-inner {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding-top: 28px;
+      }
+
+      .hero-card {
+        padding: 24px;
+      }
+
+      h1 {
+        max-width: none;
+        font-size: 2.6rem;
+      }
+
+      .project-top {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title"><span class="mdl-layout-title"><p11>Rajashree Naik :)</p11>
-</span></span>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Rajashree <span>Naik</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">About</a>
+        <a class="active" href="project.html">Projects</a>
+        <a href="https://github.com/rajashree-n">GitHub</a>
+        <a href="https://www.linkedin.com/in/rajashree-naik/">LinkedIn</a>
+      </nav>
     </div>
   </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title"><p2><strong>Hey Visitor!</strong></p2></span>
-    <nav class="mdl-navigation">
-      			<b><a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> HOME</a><b>
-      			<a class="mdl-navigation__link" href="project.html"><i class="material-icons">note</i></i> PROJECTS</a>
-      			
-    		</nav>
-  </div>
-</div>
-<div class="demo-blog mdl-layout  mdl-js-layout has-drawer is-upgraded">
 
-<main class="mdl-layout__content">
-<center>
-    <a href="https://github.com/rajashree-n"><button class="mdl-button mdl-js-button mdl-button--raised">
-        <i class="fa fa-github"></i> GitHub
-      </button></a>
-      <a onclick="reset()" href="https://rajashree-n.github.io/project.html"><button class="mdl-button mdl-js-button mdl-button--raised">
-            <i class="fa fa-github"></i> Projects
-          </button></a>
-</center>
-        <iframe id="GK1" src="google-keep/index1.html" style="width:90%; height:900px; margin:20px;"></iframe>
-        <iframe id="GK2" src="google-keep/index.html" style="width:90%; height:900px; margin:20px;"></iframe>
-        <iframe id="Jack" src="jackieC-portfolio/index.html" style="width:90%; height:700px; margin:20px;"></iframe>
-        <iframe id="App" src="AppSuite/index.html" style="width:90%; height:600px; margin:20px;"></iframe>
-        <iframe id="ATM" src="ATVM/index.html" style="width:90%; height:900px; margin:20px;"></iframe>
-        <iframe id="EM" src="EasyMe/index.html" style="width:90%; height:900px; margin:20px;"></iframe>
-
-<div class="demo-blog__posts mdl-grid">
-
-
-    <div id="1" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="#">Biological Tree Growth - JAVA Application</a></h5>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <div class="eyebrow">Selected Work</div>
+          <h1>Projects across web, desktop, and interface design.</h1>
+          <p>
+            This collection highlights academic, personal, and portfolio projects that reflect my
+            background in software engineering, full stack development, UI work, and practical
+            product thinking. The list is based on the projects already linked in this site and is
+            framed to match my current professional profile.
+          </p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/rajashree-n">
+              <i class="fa fa-github" aria-hidden="true"></i> View GitHub
+            </a>
+            <a class="button button-secondary" href="index.html">
+              <i class="fa fa-user" aria-hidden="true"></i> Back to Profile
+            </a>
+          </div>
+          <div class="meta-row">
+            <span class="tag">Web Apps</span>
+            <span class="tag">Java</span>
+            <span class="tag">Spring MVC</span>
+            <span class="tag">AngularJS</span>
+            <span class="tag">Electron</span>
+          </div>
         </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/Biological-Tree-Growth"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Featured Projects</h2>
+        <p>
+          A mix of interface-driven work, full stack applications, and hands-on builds that show
+          both technical range and interest in usable product experiences.
+        </p>
+      </div>
+
+      <div class="grid">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                    Download the jar file from github and run
+              <h3>Biological Tree Growth</h3>
+              <p>
+                A Java application focused on modeling biological tree growth. This project shows
+                algorithmic thinking, desktop-style application structure, and academic
+                implementation in Java.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">Java</span>
+          </div>
+          <div class="stack">
+            <span>Java</span>
+            <span>Desktop Application</span>
+            <span>Algorithmic Modeling</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="https://github.com/rajashree-n/Biological-Tree-Growth">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-    <div id="2" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="#">Todo Application - Spring MVC</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/AngularJS-Todo-App"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div><div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                    It requires local-host Tomcat to run
+              <h3>Todo Application with Spring MVC</h3>
+              <p>
+                A task management application built with Spring MVC. It reflects early full stack
+                backend work and an interest in structuring web applications around server-side
+                application flows.
+              </p>
             </div>
-        </div>
+            <span class="type-badge">Full Stack</span>
+          </div>
+          <div class="stack">
+            <span>Spring MVC</span>
+            <span>Java</span>
+            <span>Tomcat</span>
+            <span>CRUD Workflows</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="https://github.com/rajashree-n/AngularJS-Todo-App">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-    </div>
-    
-    <div id="3" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="#">Todo Application - AngularJS</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/Spring-App-TodoList"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                    It requires server to run - Download and - ng serve
+              <h3>Todo Application with AngularJS</h3>
+              <p>
+                A front-end oriented todo application showing client-side rendering, interactive
+                UI flows, and early single-page app experimentation with AngularJS.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">Frontend</span>
+          </div>
+          <div class="stack">
+            <span>AngularJS</span>
+            <span>JavaScript</span>
+            <span>SPA Patterns</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="https://github.com/rajashree-n/Spring-App-TodoList">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-    <div id="4" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-            <div class="mdl-card__title mdl-color-text--grey-50">
-            <h5 class="quote"><a href="google-keep/index.html">Google-Keep Todo Application</a></h5>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-            <a href="https://github.com/rajashree-n/google-keep"><button class="mdl-button mdl-js-button mdl-button--raised">
-              <i class="fa fa-github"></i> GitHub
-            </button></a>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
-                <div>
-                    HTML and JAVASCRIPT
-                    <button onclick="myFunc1()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                         Sample View
-                      </button> <i></i>
-                      <button onclick="myFunc()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--raisedt">
-                             Working View
-                          </button>
-                </div>
-            </div>
-        </div>
-
-
-    <div id="5" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="AppSuite/index.html">AppSuite WebPage</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/AppSuite"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                <button onclick="myFunc2()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    <i class="fa fa-github"></i> Sample View
-                  </button>
+              <h3>Google Keep Todo Application</h3>
+              <p>
+                A lightweight productivity interface inspired by Google Keep. It demonstrates
+                practical UI design, dynamic front-end behavior, and attention to interaction.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">UI Demo</span>
+          </div>
+          <div class="stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive UI</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="google-keep/index.html">
+              <i class="fa fa-external-link" aria-hidden="true"></i> Live Demo
+            </a>
+            <a class="project-link" href="https://github.com/rajashree-n/google-keep">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-
-
-    <div id="6" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="jackieC-portfolio/index.html">Jackie Chan Portfolio</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/portfolio"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                <button onclick="myFunc3()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    <i class="fa fa-github"></i> Sample View
-                  </button>
+              <h3>AppSuite Recreation</h3>
+              <p>
+                A recreation of the AppSuite website experience, built as a close visual mirror.
+                This project highlights layout replication, front-end detailing, and visual
+                fidelity work.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">Web UI</span>
+          </div>
+          <div class="stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Visual Reproduction</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="AppSuite/index.html">
+              <i class="fa fa-external-link" aria-hidden="true"></i> Live Demo
+            </a>
+            <a class="project-link" href="https://github.com/rajashree-n/AppSuite">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-
-    
-    <div id="7" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="EasyMe/index.html">Easy Me Application</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/EasyMe"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                <button onclick="myFunc4()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    <i class="fa fa-github"></i> Sample View
-                  </button>
+              <h3>Jackie Chan Portfolio</h3>
+              <p>
+                A themed portfolio site built around a public figure. This is a design-forward
+                project that shows page composition, branding choices, and presentation-focused UI
+                work.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">Portfolio</span>
+          </div>
+          <div class="stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Visual Design</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="jackieC-portfolio/index.html">
+              <i class="fa fa-external-link" aria-hidden="true"></i> Live Demo
+            </a>
+            <a class="project-link" href="https://github.com/rajashree-n/portfolio">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
-
-    <div id="8" class="mdl-card amazing mdl-shadow--2dp mdl-cell mdl-cell--4-col">
-        <div class="mdl-card__title mdl-color-text--grey-50">
-        <h5 class="quote"><a href="ATVM/index.html">ATVM</a></h5>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-        <a href="https://github.com/rajashree-n/ATVM"><button class="mdl-button mdl-js-button mdl-button--raised">
-          <i class="fa fa-github"></i> GitHub
-        </button></a>
-        </div>
-        <div class="mdl-card__supporting-text meta mdl-color-text--blue-600">
+        <article class="project-card">
+          <div class="project-top">
             <div>
-                <button onclick="myFunc5()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                    <i class="fa fa-github"></i> Sample View
-                  </button>
+              <h3>EasyMe</h3>
+              <p>
+                A desktop application that bundles memo, contacts, calculator, and calendar
+                features. It reflects product thinking around utility software and multi-feature
+                desktop workflows.
+              </p>
             </div>
-        </div>
-    </div>
+            <span class="type-badge">Desktop App</span>
+          </div>
+          <div class="stack">
+            <span>Electron</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Productivity Tools</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="EasyMe/index.html">
+              <i class="fa fa-external-link" aria-hidden="true"></i> Local Demo
+            </a>
+            <a class="project-link" href="https://github.com/rajashree-n/EasyMe">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
 
+        <article class="project-card">
+          <div class="project-top">
+            <div>
+              <h3>ATVM</h3>
+              <p>
+                An Automatic Ticket Vending Machine concept designed for rural users. This project
+                blends interface work with a practical problem-solving lens and an emphasis on
+                accessibility and usability.
+              </p>
+            </div>
+            <span class="type-badge">Concept Build</span>
+          </div>
+          <div class="stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UX for Accessibility</span>
+          </div>
+          <div class="links">
+            <a class="project-link primary" href="ATVM/index.html">
+              <i class="fa fa-external-link" aria-hidden="true"></i> Live Demo
+            </a>
+            <a class="project-link" href="https://github.com/rajashree-n/ATVM">
+              <i class="fa fa-github" aria-hidden="true"></i> Repository
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-
-</div>
-</main>
-
-<footer class="mdl-mega-footer">
-
-<div class="mdl-mega-footer__bottom-section">
-<h6>Copyright © Rajashree Naik</h6>
-</div>
-</footer>
-
-
-<script>
-    function myFunc() {
-        document.getElementById("GK1").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-    function myFunc1() {
-        document.getElementById("GK2").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-    function myFunc2() {
-        document.getElementById("App").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-    function myFunc3() {
-        document.getElementById("Jack").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-    function myFunc4() {
-        document.getElementById("EM").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-    function myFunc5() {
-        document.getElementById("ATM").style.display="block";
-        document.getElementById("1").style.display="none";
-        document.getElementById("2").style.display="none";
-        document.getElementById("3").style.display="none";
-        document.getElementById("4").style.display="none";
-        document.getElementById("5").style.display="none";
-        document.getElementById("6").style.display="none";
-        document.getElementById("7").style.display="none";
-        document.getElementById("8").style.display="none";
-
-    }
-
-</script>
+  <footer class="footer">
+    <div class="shell">Copyright © Rajashree Naik</div>
+  </footer>
 </body>
+</html>
